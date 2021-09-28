@@ -10,7 +10,7 @@ nav{
   grid-template-columns: auto auto auto auto auto auto;
   position: absolute;
   top: 0;
-  right: 10vw;
+  right: 15vw;
   gap: 3vw;
 }
 
@@ -22,11 +22,11 @@ li{
 nav ul li a{
     text-decoration: none;
     font-size: 1.5vw;
+    font-weight: normal;
     color: black;
 }
 
 nav ul li a:hover{
-    color: rgb(134, 134, 134);
     transition: 300ms ease-in-out;
 }
 
@@ -65,7 +65,7 @@ nav img{
     }
 
 .dropdown a:hover{
-        color: rgb(99, 99, 96);
+        color: rgb(141, 13, 13);
     }
 
                 /* SØGEFELT */
@@ -74,7 +74,7 @@ input[type=text] {
         width: 135px;
         position: absolute;
         top: -0.5vw;
-        right: -8vw;
+        right: -13vw;
         box-sizing: border-box;
         border: 2px solid #ccc;
         border-radius: 4px;
