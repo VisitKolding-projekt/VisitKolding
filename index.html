@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VisitKolding</title>
+    <link rel="stylesheet" href="./main.css">
   </head>
   <body>
     <!-- MATHIAS -->
@@ -22,16 +23,61 @@
     <!-- ANNE -->
 
     <nav>
-      <img src="./Billedmateriale/logo_33pix_hoj-01@2x.png">
 
-      <ul>
-        <li><a class="alink" href="#">Oplevelser</a></li>
-        <li><a class="alink" href="#">Overnatning</a></li>
-        <li><a class="alink" href="#">Mad & Drikke</a></li>
-        <li><a class="alink" href="#">Events</a></li>
-        <li><a class="alink" href="#">Planlæg din tur</a></li>
+      <a href="./index.html"><img src="./Billedmateriale/logo_33pix_hoj-01@2x.png"></a>
+
+      <ul class="a-ul">
+
+        <li> 
+          
+        <div class="dropdown">
+            <a href="#">Oplevelser</a>
+        
+            <div class="dropdown-content">
+              <a href="./Sider/Seværdigheder.html">Seværdigheder</a>
+              <a href="./Sider/Geografisk have.html">Geografisk have</a>
+              <a href="./Sider/Natteliv.html">Natteliv</a>
+              <a href="./Sider/Gågaden.html">Gågaden</a>
+              <a href="./Sider/Havnen.html">Havnen</a>
+              <a href="./Sider/Historiske bygninger.html">Historiske bygninger</a>
+            </div>
+
+        </div>
+
+      </li>
+
+
+        <li><a href="#">Overnatning</a></li>
+        <li><a href="#">Mad & Drikke</a></li>
+        <li><a href="#">Events</a></li>
+
+        <li>
+
+          <div class="dropdown">
+            <a href="#">Planlæg din tur</a>
+        
+            <div class="dropdown-content">
+                <a href="./Sider/Trafik.html">Trafik</a>
+            </div>
+
+        </div>
+          
+          
+        
+        
+        </li>
       </ul>
+
+      <div class="søg">
+        <input class="form-input" id="input-type-text-icon" name="search-icon" title="Search" type="search">
+        <button class="button-search"><svg xmlns="http://www.w3.org/2000/svg" width="25.42" height="25.425" viewBox="0 0 25.42 25.425">
+        <path id="search-solid" d="M25.075,21.981l-4.95-4.95a1.191,1.191,0,0,0-.844-.348h-.809a10.323,10.323,0,1,0-1.788,1.788v.809a1.191,1.191,0,0,0,.348.844l4.95,4.95a1.187,1.187,0,0,0,1.683,0L25.07,23.67A1.2,1.2,0,0,0,25.075,21.981Zm-14.747-5.3a6.356,6.356,0,1,1,6.356-6.356A6.352,6.352,0,0,1,10.328,16.683Z"/>
+        </svg>
+          </button>
+          </div>
+
     </nav>
+    
 
     <!-- PERNILLE -->
   </body>
