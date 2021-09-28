@@ -7,10 +7,10 @@ nav{
 .a-ul{
   list-style-type: none;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   position: absolute;
   top: 0;
-  right: 20vw;
+  right: 10vw;
   gap: 3vw;
 }
 
@@ -21,7 +21,7 @@ li{
 
 nav ul li a{
     text-decoration: none;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     color: black;
 }
 
@@ -44,7 +44,7 @@ nav img{
 .dropdown-content{
     display: none;
     position: absolute;
-    width: 15vw;
+    width: 18vw;
     background-color: #474646;
     box-shadow: 0px 8px 16px 0px rgb(139, 139, 135);
     padding: 20px;
@@ -74,7 +74,7 @@ input[type=text] {
         width: 135px;
         position: absolute;
         top: -0.5vw;
-        right: -15vw;
+        right: -8vw;
         box-sizing: border-box;
         border: 2px solid #ccc;
         border-radius: 4px;
@@ -89,5 +89,5 @@ input[type=text] {
       }
       
       input[type=text]:focus {
-        width: 25%;
+        width: 35%;
       }
