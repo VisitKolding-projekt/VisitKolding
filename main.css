@@ -1,14 +1,14 @@
 /* ANNE */
 
-nav{
-    font-family: 'Roboto';
-    font-weight: 400;
-    position: relative;
-    max-width: 1920px;
-    z-index: 1;
+nav {
+  font-family: "Roboto";
+  font-weight: 400;
+  position: relative;
+  max-width: 1920px;
+  z-index: 1;
 }
 
-.a-ul{
+.a-ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
@@ -18,145 +18,209 @@ nav{
   gap: 3vw;
 }
 
-li{
-    text-align: end;
-    
+li {
+  text-align: end;
 }
 
-nav ul li a{
-    text-decoration: none;
-    font-size: 1.5vw;
-    color: black;
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: black;
 }
 
-nav ul li a:hover{
-    transition: 300ms ease-in-out;
+nav ul li a:hover {
+  transition: 300ms ease-in-out;
 }
 
-nav img{
-    width: 20vw;
+nav img {
+  width: 20vw;
 }
 
-            /* DROPDOWN */
+/* DROPDOWN */
 
-.dropdown{
-    position: relative;
-    display: block;
+.dropdown {
+  position: relative;
+  display: block;
 }
 
-.dropdown-content{
-    display: none;
-    position: absolute;
-    width: 18vw;
-    background-color: #474646;
-    box-shadow: 0px 8px 16px 0px rgb(139, 139, 135);
-    padding: 20px;
-    border-radius: 15px;
-    line-height: 30px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 18vw;
+  background-color: #474646;
+  box-shadow: 0px 8px 16px 0px rgb(139, 139, 135);
+  padding: 20px;
+  border-radius: 15px;
+  line-height: 30px;
 }
 
-.dropdown:hover .dropdown-content{
-    display: block;
-  }
-
-.dropdown-content a{
-      text-decoration: none;
-      color: rgb(250, 244, 244);
-      display: block;
-      text-align: left;
-      transition: 300ms ease-in-out;
-    }
-
-.dropdown a:hover{
-        color: rgb(141, 13, 13);
-    }
-
-                /* SØGEFELT */
-
-input[type=text] {
-        width: 135px;
-        position: absolute;
-        top: -0.5vw;
-        right: -13vw;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
-        background-color: white;
-        background-image: url(./Billedmateriale/Search.png);
-        background-position: 5px 5px; 
-        background-size: 20px;
-        background-repeat: no-repeat;
-        padding: 5px 20px 5px 40px;
-        transition: 0.4s ease-in-out;
-      }
-      
-input[type=text]:focus {
-        width: 35%;
-      }
-
-                        /* FOOTER */
-
-.afooter{
-    height: 338px;
-    position: relative;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-                        /* FØLG OS PÅ */
-
-                        /* NYTTIGE LINKS */
-
-
-.footer-text h4{
-    font-size: 2vw;
+.dropdown-content a {
+  text-decoration: none;
+  color: rgb(250, 244, 244);
+  display: block;
+  text-align: left;
+  transition: 300ms ease-in-out;
 }
 
-.afooter ul{
-    list-style-type: none;
-    position: absolute;
-    top: 0;
-    right: 15vw;
-    gap: 3vw; 
+.dropdown a:hover {
+  color: rgb(141, 13, 13);
 }
 
+/* SØGEFELT */
 
-
-
-
-
-
-                        /* FOOTER-STRIP */
-
-.footer-strip{
-    max-width: 1920px;
-    position: relative;
-    height: 80px;
-    background-color: whitesmoke;
-    overflow: hidden;
+input[type="text"] {
+  width: 135px;
+  position: absolute;
+  top: -0.5vw;
+  right: -13vw;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(./Billedmateriale/Search.png);
+  background-position: 5px 5px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding: 5px 20px 5px 40px;
+  transition: 0.4s ease-in-out;
 }
 
-.footer-strip p{
-    position: absolute;
-    top: 1.1vw;
-    left: 8vw;
+input[type="text"]:focus {
+  width: 35%;
 }
 
-.footer-strip ul{
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: auto auto;
-    position: absolute;
-    top: 1.1vw;
-    right: 8vw;
-    gap: 3vw;
+/* FOOTER */
+
+.afooter {
+  height: 338px;
+  position: relative;
 }
 
-.footer-strip li a{
-    text-decoration: none;
-    color: black;
+/* FØLG OS PÅ */
+
+/* NYTTIGE LINKS */
+
+.footer-text h4 {
+  font-size: 2vw;
 }
 
-.footer-strip li a:hover{
-    color: rgb(141, 13, 13); 
-    transition: 300ms ease-in-out;
+.afooter ul {
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  right: 15vw;
+  gap: 3vw;
+}
+
+/* FOOTER-STRIP */
+
+.footer-strip {
+  max-width: 1920px;
+  position: relative;
+  height: 80px;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+
+.footer-strip p {
+  position: absolute;
+  top: 1.1vw;
+  left: 8vw;
+}
+
+.footer-strip ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  position: absolute;
+  top: 1.1vw;
+  right: 8vw;
+  gap: 3vw;
+}
+
+.footer-strip li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-strip li a:hover {
+  color: rgb(141, 13, 13);
+  transition: 300ms ease-in-out;
+}
+
+/* Penille */
+
+#explore-kolding {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  margin: 100px auto;
+  max-width: 1630px;
+  font-family: "Roboto";
+  gap: 5px;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+    "box1 box1 box2 box3 box4"
+    "box1 box1 box5 box6 box7";
+}
+
+#explore-kolding img {
+  width: 100%;
+  max-width: 310px;
+  min-height: 257px;
+  max-height: 257px;
+  object-fit: cover;
+}
+
+#explore-kolding h2 {
+  font-weight: 500;
+  text-align: left;
+}
+
+#explore-kolding p#larger-text {
+  font-weight: 200;
+  text-align: left;
+}
+
+#explore-kolding p {
+  font-family: "Roboto";
+  font-weight: 200;
+  text-align: center;
+}
+
+#box1 {
+  grid-area: box1;
+  align-self: center;
+}
+
+#box2 {
+  grid-area: box2;
+}
+
+#box3 {
+  grid-area: box3;
+}
+
+#box4 {
+  grid-area: box4;
+}
+
+#box5 {
+  grid-area: box5;
+}
+
+#box6 {
+  grid-area: box6;
+}
+
+#box7 {
+  grid-area: box7;
 }
