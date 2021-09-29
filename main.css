@@ -1,6 +1,8 @@
 /* ANNE */
 
 nav{
+    font-family: 'Roboto';
+    font-weight: 400;
     position: relative;
     max-width: 1920px;
     z-index: 1;
@@ -24,7 +26,6 @@ li{
 nav ul li a{
     text-decoration: none;
     font-size: 1.5vw;
-    font-weight: normal;
     color: black;
 }
 
@@ -90,11 +91,41 @@ input[type=text] {
         transition: 0.4s ease-in-out;
       }
       
-      input[type=text]:focus {
+input[type=text]:focus {
         width: 35%;
       }
 
                         /* FOOTER */
+
+.afooter{
+    height: 338px;
+    position: relative;
+}
+
+                        /* FØLG OS PÅ */
+
+                        /* NYTTIGE LINKS */
+
+
+.footer-text h4{
+    font-size: 2vw;
+}
+
+.afooter ul{
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    right: 15vw;
+    gap: 3vw; 
+}
+
+
+
+
+
+
+
+                        /* FOOTER-STRIP */
 
 .footer-strip{
     max-width: 1920px;
