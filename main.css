@@ -1,5 +1,6 @@
 /* ANNE */
 
+
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@ nav img{
     width: 20vw;
 }
 
-.a-ul{
+.a-ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
@@ -48,47 +49,71 @@ nav ul li a{
     color: black;
 }
 
-nav ul li a:hover{
-    transition: 300ms ease-in-out;
+nav ul li a:hover {
+  transition: 300ms ease-in-out;
 }
 
-
-
-            /* DROPDOWN */
-
-.dropdown{
-    position: relative;
-    display: block;
+nav img {
+  width: 20vw;
 }
 
-.dropdown-content{
-    display: none;
-    position: absolute;
-    width: 18vw;
-    background-color: #474646;
-    box-shadow: 0px 8px 16px 0px rgb(139, 139, 135);
-    padding: 20px;
-    border-radius: 15px;
-    line-height: 30px;
+/* DROPDOWN */
+
+.dropdown {
+  position: relative;
+  display: block;
 }
 
-.dropdown:hover .dropdown-content{
-    display: block;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 18vw;
+  background-color: #474646;
+  box-shadow: 0px 8px 16px 0px rgb(139, 139, 135);
+  padding: 20px;
+  border-radius: 15px;
+  line-height: 30px;
+}
 
-.dropdown-content a{
-      text-decoration: none;
-      color: rgb(250, 244, 244);
-      display: block;
-      text-align: left;
-      transition: 300ms ease-in-out;
-    }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown a:hover{
-        color: rgb(141, 13, 13);
-    }
+.dropdown-content a {
+  text-decoration: none;
+  color: rgb(250, 244, 244);
+  display: block;
+  text-align: left;
+  transition: 300ms ease-in-out;
+}
 
-                /* SØGEFELT */
+.dropdown a:hover {
+  color: rgb(141, 13, 13);
+}
+
+/* SØGEFELT */
+
+input[type="text"] {
+  width: 135px;
+  position: absolute;
+  top: -0.5vw;
+  right: -13vw;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(./Billedmateriale/Search.png);
+  background-position: 5px 5px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding: 5px 20px 5px 40px;
+  transition: 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+  width: 35%;
+}
 
 input[type=text] {
         width: 140px;
@@ -113,15 +138,37 @@ input[type=text]:focus {
         width: 15%;
       }
 
-                        /* FOOTER */
 
-/* .afooter{
-    
-} */
+.afooter {
+  height: 338px;
+  position: relative;
+}
 
-                        /* FØLG OS PÅ */
+/* FØLG OS PÅ */
 
-                        /* NYTTIGE LINKS */
+/* NYTTIGE LINKS */
+
+.footer-text h4 {
+  font-size: 2vw;
+}
+
+.afooter ul {
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  right: 15vw;
+  gap: 3vw;
+}
+
+/* FOOTER-STRIP */
+
+.footer-strip {
+  max-width: 1920px;
+  position: relative;
+  height: 80px;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
 
 .afooter-text{
     position: inherit;
@@ -144,15 +191,38 @@ input[type=text]:focus {
 
 .textoglinks-container{
     background-color:#dcb8b8;
-    height: 20vw;
-
-   
+    height: 20vw; 
 }
 
 .afooter ul{
     list-style-type: none;
 }
 
+.footer-strip p {
+  position: absolute;
+  top: 1.1vw;
+  left: 8vw;
+}
+
+.footer-strip ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  position: absolute;
+  top: 1.1vw;
+  right: 8vw;
+  gap: 3vw;
+}
+
+.footer-strip li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-strip li a:hover {
+  color: rgb(141, 13, 13);
+  transition: 300ms ease-in-out;
+}
 
 .nyttige-links{
     position: absolute;
@@ -184,42 +254,75 @@ input[type=text]:focus {
     color: rgb(141, 13, 13);
 }
 
-                        /* FOOTER-STRIP */
 
-.footer-strip{
-    position: relative;
-    height: 6.588579795021962vw;
-    background-color: whitesmoke;
-    overflow: hidden;
+/* Penille */
+
+#explore-kolding {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  margin: 100px auto;
+  max-width: 1630px;
+  font-family: "Roboto";
+  gap: 5px;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+    "box1 box1 box2 box3 box4"
+    "box1 box1 box5 box6 box7";
 }
 
-.footer-strip-container{
-    margin: 5vw;
+#explore-kolding img {
+  width: 100%;
+  max-width: 310px;
+  min-height: 257px;
+  max-height: 257px;
+  object-fit: cover;
 }
 
-.footer-strip p{
-    position: absolute;
-    top: 2.5vw;
-    font-size: 1vw;
+#explore-kolding h2 {
+  font-weight: 500;
+  text-align: left;
 }
 
-.footer-strip ul{
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: auto auto;
-    position: absolute;
-    top: 2.5vw;
-    right: 5vw;
-    gap: 3vw;
+#explore-kolding p#larger-text {
+  font-weight: 200;
+  text-align: left;
 }
 
-.footer-strip li a{
-    text-decoration: none;
-    color: black;
-    font-size: 1vw;
+#explore-kolding p {
+  font-family: "Roboto";
+  font-weight: 200;
+  text-align: center;
 }
 
-.footer-strip li a:hover{
-    color: rgb(141, 13, 13); 
-    transition: 300ms ease-in-out;
+#box1 {
+  grid-area: box1;
+  align-self: center;
+}
+
+#box2 {
+  grid-area: box2;
+}
+
+#box3 {
+  grid-area: box3;
+}
+
+#box4 {
+  grid-area: box4;
+}
+
+#box5 {
+  grid-area: box5;
+}
+
+#box6 {
+  grid-area: box6;
+}
+
+#box7 {
+  grid-area: box7;
 }
