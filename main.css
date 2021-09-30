@@ -326,3 +326,14 @@ input[type=text]:focus {
 #box7 {
   grid-area: box7;
 }
+
+/* Zozan */
+.map {
+  position:relative;
+  text-align:right;
+  height: 600px;px;width:1630px;
+  overflow:hidden;
+  background: none !important;
+  height:600px;
+  width:1630px;
+}
