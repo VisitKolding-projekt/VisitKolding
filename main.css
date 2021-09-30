@@ -93,6 +93,28 @@ nav img {
 
 /* SØGEFELT */
 
+input[type="text"] {
+  width: 135px;
+  position: absolute;
+  top: -0.5vw;
+  right: -13vw;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(./Billedmateriale/Search.png);
+  background-position: 5px 5px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding: 5px 20px 5px 40px;
+  transition: 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+  width: 35%;
+}
+
 input[type=text] {
         width: 140px;
         position: absolute;
@@ -231,6 +253,7 @@ input[type=text]:focus {
 .nyttige-links a:hover{
     color: rgb(141, 13, 13);
 }
+
 
 /* Penille */
 
