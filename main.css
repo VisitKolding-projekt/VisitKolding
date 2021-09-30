@@ -115,19 +115,19 @@ input[type="text"]:focus {
 
 /* HEADER GRID */
 
-header {
+.figure-content header {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
   grid-template-areas:
-    "box1 box10 box4 box4"
-    "box1 box10 box3 box"
-    "box6 box5 box3 box9"
-    "box7 box5 box8 box2";
+    "b1 b10 b4 b4"
+    "b1 b10 b3 b"
+    "b6 b5 b3 b9"
+    "b7 b5 b8 b2";
   position: relative;
 }
 
-figure {
+.figure-content figure {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -136,7 +136,7 @@ figure {
   overflow: hidden;
 }
 
-figure img {
+.figure-content figure img {
   width: 20vw;
   height: 20vw;
 }
@@ -145,75 +145,75 @@ figure img {
   font-size: 1vw;
 }
 
-#box1 {
-  grid-area: box1;
+#b1 {
+  grid-area: b1;
 }
 
-#box1 img {
+#b1 img {
   width: 30vw;
 }
 
-#box2 {
-  grid-area: box2;
+#b2 {
+  grid-area: b2;
 }
 
-#box3 {
-  grid-area: box3;
+#b3 {
+  grid-area: b3;
 }
 
-#box4 {
-  grid-area: box4;
+#b4 {
+  grid-area: b4;
 }
 
-#box4 img {
+#b4 img {
   width: auto;
 }
 
-#box5 {
-  grid-area: box5;
+#b5 {
+  grid-area: b5;
 }
 
-#box5 img {
+#b5 img {
   height: 45vw;
 }
 
-#box6 {
-  grid-area: box6;
+#b6 {
+  grid-area: b6;
 }
 
-#box6 img {
+#b6 img {
   width: auto;
 }
 
-#box7 {
-  grid-area: box7;
+#b7 {
+  grid-area: b7;
 }
 
-#box7 img {
+#b7 img {
   width: auto;
 }
 
-#box8 {
-  grid-area: box8;
+#b8 {
+  grid-area: b8;
 }
 
-#box9 {
-  grid-area: box9;
+#b9 {
+  grid-area: b9;
 }
 
-#box10 {
-  grid-area: box10;
+#b10 {
+  grid-area: b10;
 }
 
-#box1,
-#box6,
-#box7 {
+#b1,
+#b6,
+#b7 {
   margin-left: 5vw;
 }
 
-#box4,
-#box9,
-#box2 {
+#b4,
+#b9,
+#b2 {
   margin-right: 5vw;
 }
 
@@ -222,12 +222,12 @@ figure img {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(6, minmax(200px, 1fr));
     grid-template-areas:
-      "box1 box2"
-      "box3 box4"
-      "box5 box5"
-      "box6 box7"
-      "box8 box9"
-      "box10 box10";
+      "b1 b2"
+      "b3 b4"
+      "b5 b5"
+      "b6 b7"
+      "b8 b9"
+      "b10 b10";
   }
 }
 
@@ -236,18 +236,18 @@ figure img {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, minmax(150px, 1fr));
     grid-template-areas:
-      "box1"
-      "box2"
-      "box4"
-      "box5"
-      "box6"
-      "box7"
-      "box8"
-      "box9";
+      "b1"
+      "b2"
+      "b4"
+      "b5"
+      "b6"
+      "b7"
+      "b8"
+      "b9";
   }
 
-  #box3,
-  #box10 {
+  #b3,
+  #b10 {
     display: none;
   }
 }
