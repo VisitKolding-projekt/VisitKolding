@@ -1,31 +1,29 @@
 /* ANNE */
 
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    max-width: 1630px;
-    font-family: 'Roboto';
+body {
+  max-width: 1630px;
+  font-family: "Roboto";
 }
 
-nav{
-    background-color: #F2F2F2;
-    font-weight: 400;
-    position: relative;
-    z-index: 1;
-    
+nav {
+  background-color: #f2f2f2;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
 }
 
-.nav-container{
-    margin-left: 5vw;
-    margin-right: 5vw;
+.nav-container {
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
-nav img{
-    width: 20vw;
+nav img {
+  width: 20vw;
 }
 
 .a-ul {
@@ -38,15 +36,14 @@ nav img{
   gap: 3vw;
 }
 
-nav ul li{
-    text-align: end;
-    
+nav ul li {
+  text-align: end;
 }
 
-nav ul li a{
-    text-decoration: none;
-    font-size: 1vw;
-    color: black;
+nav ul li a {
+  text-decoration: none;
+  font-size: 1vw;
+  color: black;
 }
 
 nav ul li a:hover {
@@ -115,29 +112,28 @@ input[type="text"]:focus {
   width: 35%;
 }
 
-input[type=text] {
-        width: 140px;
-        position: absolute;
-        right: 0;
-        top: 1vw;
-        margin-right: 5vw;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
-        background-color: white;
-        background-image: url(./Billedmateriale/Search.png);
-        background-position: 5px 5px; 
-        background-size: 20px;
-        background-repeat: no-repeat;
-        padding: 5px 40px 5px 40px;
-        transition: 0.4s ease-in-out;
-      }
-      
-input[type=text]:focus {
-        width: 15%;
-      }
+input[type="text"] {
+  width: 140px;
+  position: absolute;
+  right: 0;
+  top: 1vw;
+  margin-right: 5vw;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(./Billedmateriale/Search.png);
+  background-position: 5px 5px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding: 5px 40px 5px 40px;
+  transition: 0.4s ease-in-out;
+}
 
+input[type="text"]:focus {
+  width: 15%;
+}
 
 .afooter {
   height: 338px;
@@ -170,32 +166,31 @@ input[type=text]:focus {
   overflow: hidden;
 }
 
-.afooter-text{
-    position: inherit;
-    top: 5vw;
-    font-size: 1.2vw;
-    line-height: 2vw;
-    margin: 0 5vw 5vw 5vw;
+.afooter-text {
+  position: inherit;
+  top: 5vw;
+  font-size: 1.2vw;
+  line-height: 2vw;
+  margin: 0 5vw 5vw 5vw;
 }
 
-.afooter-text h4{
-    font-size: 2vw;
-    margin-bottom: 1.5vw;
+.afooter-text h4 {
+  font-size: 2vw;
+  margin-bottom: 1.5vw;
 }
 
-.textoglinks{
-    position: relative;
-    margin-right: 5vw;
- 
+.textoglinks {
+  position: relative;
+  margin-right: 5vw;
 }
 
-.textoglinks-container{
-    background-color:#dcb8b8;
-    height: 20vw; 
+.textoglinks-container {
+  background-color: #dcb8b8;
+  height: 20vw;
 }
 
-.afooter ul{
-    list-style-type: none;
+.afooter ul {
+  list-style-type: none;
 }
 
 .footer-strip p {
@@ -224,36 +219,35 @@ input[type=text]:focus {
   transition: 300ms ease-in-out;
 }
 
-.nyttige-links{
-    position: absolute;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    top: 2.5vw;
-    right: 0;
-    gap: 5vw;
+.nyttige-links {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  top: 2.5vw;
+  right: 0;
+  gap: 5vw;
 }
 
-.nyttige-links h5{
-    font-size: 1.5vw;
-    font-weight: 400;
-    margin-bottom: 1vw;
+.nyttige-links h5 {
+  font-size: 1.5vw;
+  font-weight: 400;
+  margin-bottom: 1vw;
 }
 
-.nyttige-links li{
-    text-align: center;
-    font-size: 1vw;
+.nyttige-links li {
+  text-align: center;
+  font-size: 1vw;
 }
 
-.nyttige-links a{
-    color: black;
-    text-decoration: none;
-    line-height: 3vw;
+.nyttige-links a {
+  color: black;
+  text-decoration: none;
+  line-height: 3vw;
 }
 
-.nyttige-links a:hover{
-    color: rgb(141, 13, 13);
+.nyttige-links a:hover {
+  color: rgb(141, 13, 13);
 }
-
 
 /* Penille */
 
@@ -329,11 +323,12 @@ input[type=text]:focus {
 
 /* Zozan */
 .map {
-  position:relative;
-  text-align:right;
-  height: 600px;px;width:1630px;
-  overflow:hidden;
+  position: relative;
+  text-align: right;
+  height: 600px;
+  width: 1630px;
+  overflow: hidden;
   background: none !important;
-  height:600px;
-  width:1630px;
+  height: 600px;
+  width: 1630px;
 }
