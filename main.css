@@ -206,7 +206,6 @@ input[type="text"]:focus {
 /* FOOTER-STRIP */
 
 .footer-strip {
-  max-width: 1920px;
   position: relative;
   height: 80px;
   background-color: whitesmoke;
@@ -215,7 +214,7 @@ input[type="text"]:focus {
 
 .footer-strip p {
   position: absolute;
-  top: 1.1vw;
+  top: 2.2vw;
   left: 5vw;
 }
 
@@ -224,9 +223,9 @@ input[type="text"]:focus {
   display: grid;
   grid-template-columns: auto auto;
   position: absolute;
-  top: 1.1vw;
+  top: 2.2vw;
   right: 5vw;
-  gap: 3vw;
+  gap: 5vw;
 }
 
 .footer-strip li a {
