@@ -144,6 +144,26 @@ input[type="text"]:focus {
 
 /* FØLG OS PÅ */
 
+.følgos {
+  background-color: #7e4646;
+  height: 20vw;
+}
+
+.følgos h2 {
+  color: white;
+  margin-left: 5vw;
+  font-size: 4vw;
+  position: absolute;
+  top: 7vw;
+}
+
+.socialmedia img {
+  position: relative;
+  left: 35vw;
+  top: 4vw;
+  margin: 2vw;
+}
+
 /* NYTTIGE LINKS */
 
 .afooter-text {
