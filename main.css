@@ -135,6 +135,8 @@ input[type="text"]:focus {
   width: 15%;
 }
 
+/* FOOTER */
+
 .afooter {
   height: 338px;
   position: relative;
@@ -144,30 +146,8 @@ input[type="text"]:focus {
 
 /* NYTTIGE LINKS */
 
-.footer-text h4 {
-  font-size: 2vw;
-}
-
-.afooter ul {
-  list-style-type: none;
-  position: absolute;
-  top: 0;
-  right: 15vw;
-  gap: 3vw;
-}
-
-/* FOOTER-STRIP */
-
-.footer-strip {
-  max-width: 1920px;
-  position: relative;
-  height: 80px;
-  background-color: whitesmoke;
-  overflow: hidden;
-}
-
 .afooter-text {
-  position: inherit;
+  position: absolute;
   top: 5vw;
   font-size: 1.2vw;
   line-height: 2vw;
@@ -180,43 +160,13 @@ input[type="text"]:focus {
 }
 
 .textoglinks {
-  position: relative;
   margin-right: 5vw;
 }
 
 .textoglinks-container {
+  position: relative;
   background-color: #dcb8b8;
   height: 20vw;
-}
-
-.afooter ul {
-  list-style-type: none;
-}
-
-.footer-strip p {
-  position: absolute;
-  top: 1.1vw;
-  left: 8vw;
-}
-
-.footer-strip ul {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: auto auto;
-  position: absolute;
-  top: 1.1vw;
-  right: 8vw;
-  gap: 3vw;
-}
-
-.footer-strip li a {
-  text-decoration: none;
-  color: black;
-}
-
-.footer-strip li a:hover {
-  color: rgb(141, 13, 13);
-  transition: 300ms ease-in-out;
 }
 
 .nyttige-links {
@@ -224,8 +174,12 @@ input[type="text"]:focus {
   display: grid;
   grid-template-columns: auto auto auto;
   top: 2.5vw;
-  right: 0;
+  right: 5vw;
   gap: 5vw;
+}
+
+.nyttige-links ul {
+  list-style-type: none;
 }
 
 .nyttige-links h5 {
@@ -247,6 +201,42 @@ input[type="text"]:focus {
 
 .nyttige-links a:hover {
   color: rgb(141, 13, 13);
+}
+
+/* FOOTER-STRIP */
+
+.footer-strip {
+  max-width: 1920px;
+  position: relative;
+  height: 80px;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+
+.footer-strip p {
+  position: absolute;
+  top: 1.1vw;
+  left: 5vw;
+}
+
+.footer-strip ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  position: absolute;
+  top: 1.1vw;
+  right: 5vw;
+  gap: 3vw;
+}
+
+.footer-strip li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-strip li a:hover {
+  color: rgb(141, 13, 13);
+  transition: 300ms ease-in-out;
 }
 
 /* Penille */
