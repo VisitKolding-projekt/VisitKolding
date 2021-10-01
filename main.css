@@ -7,6 +7,7 @@
 
 body {
   max-width: 1630px;
+  margin: auto;
   font-family: "Roboto";
 }
 
@@ -138,7 +139,7 @@ input[type="text"]:focus {
 
 .figure-content figure img {
   width: 20vw;
-  height: 20vw;
+  height: 15vw;
 }
 
 .h2-grid {
@@ -166,7 +167,7 @@ input[type="text"]:focus {
 }
 
 #b4 img {
-  width: auto;
+  width: 40vw;
 }
 
 #b5 {
@@ -174,23 +175,15 @@ input[type="text"]:focus {
 }
 
 #b5 img {
-  height: 45vw;
+  height: 36.2vw;
 }
 
 #b6 {
   grid-area: b6;
 }
 
-#b6 img {
-  width: auto;
-}
-
 #b7 {
   grid-area: b7;
-}
-
-#b7 img {
-  width: auto;
 }
 
 #b8 {
@@ -405,15 +398,15 @@ input[type="text"]:focus {
 #explore-kolding h2 {
   font-weight: 500;
   text-align: left;
-  line-height: 2vw;
-  margin-right: 20vw;
+  line-height: 1.5vw;
+  margin-right: 17vw;
   margin-bottom: 1.5vw;
 }
 
 #explore-kolding p#larger-text {
   font-weight: 200;
   text-align: left;
-  margin-right: 6vw;
+  margin-right: 7.5vw;
 }
 
 #explore-kolding p {
