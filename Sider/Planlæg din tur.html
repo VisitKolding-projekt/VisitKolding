@@ -1,97 +1,185 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Planlæg din tur</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/main.css">
-</head>
-<body>
-
-  <nav>
-
-    <a href="/index.html"><img src="/Billedmateriale/logo_33pix_hoj-01@2x.png"></a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html"
+        ><img src="/Billedmateriale/logo_33pix_hoj-01@2x.png"
+      /></a>
 
       <ul class="a-ul">
+        <!-- OPLEVELSER DROPDOWN -->
 
-                  <!-- OPLEVELSER DROPDOWN -->
-
-        <li> 
+        <li>
           <div class="dropdown">
-
             <a href="/Sider/Oplevelser.html">Oplevelser</a>
-      
-              <div class="dropdown-content">
-                <a href="/Sider/Gågaden.html">Gågaden</a>
-                <a href="/Sider/Havnen.html">Havnen</a>
-                <a href="/Sider/Events.html">Events</a>
-              </div>
 
+            <div class="dropdown-content">
+              <a href="/Sider/Gågaden.html">Gågaden</a>
+              <a href="/Sider/Havnen.html">Havnen</a>
+              <a href="/Sider/Events.html">Events</a>
+            </div>
           </div>
         </li>
 
-                    <!-- SEVÆRDIGHEDER DROPDOWM -->
+        <!-- SEVÆRDIGHEDER DROPDOWM -->
 
         <li>
           <div class="dropdown">
-          
             <a href="/Sider/Seværdigheder.html">Seværdigheder</a>
-          
-              <div class="dropdown-content">
-                <a href="/Sider/Historiske bygninger.html">Historiske bygninger</a>
-                <a href="/Sider/Geografisk have.html">Geografisk have</a>
-              </div>
-          
+
+            <div class="dropdown-content">
+              <a href="/Sider/Historiske bygninger.html"
+                >Historiske bygninger</a
+              >
+              <a href="/Sider/Geografisk have.html">Geografisk have</a>
+            </div>
           </div>
         </li>
 
-                    <!-- PLANLÆG DIN TUR DROPDOWN -->
+        <!-- PLANLÆG DIN TUR DROPDOWN -->
 
         <li>
           <div class="dropdown">
+            <a href="/Sider/Planlæg din tur.html">Planlæg din tur</a>
 
-                <a href="/Sider/Planlæg din tur.html">Planlæg din tur</a>
-      
-                  <div class="dropdown-content">
-                    <a href="/Sider/Trafik.html">Trafik</a>
-                    <a href="/Sider/Overnatning.html">Overnatning</a>
-                    <a href="/Sider/Mad & drikke.html">Mad & Drikke</a>
-                  </div>
-
+            <div class="dropdown-content">
+              <a href="/Sider/Trafik.html">Trafik</a>
+              <a href="/Sider/Overnatning.html">Overnatning</a>
+              <a href="/Sider/Mad & drikke.html">Mad & Drikke</a>
+            </div>
           </div>
         </li>
 
-                      <!-- AT BO I KOLDING DROPDOWN -->
+        <!-- AT BO I KOLDING DROPDOWN -->
 
         <li>
           <div class="dropdown">
+            <a href="/Sider/At bo i Kolding.html">At bo i Kolding</a>
 
-                <a href="/Sider/At bo i Kolding.html">At bo i Kolding</a>
-
-                <div class="dropdown-content">
-                  <a href="/Sider/Foreningsliv.html">Foreningsliv</a>
-                  <a href="/Sider/Natteliv.html">Natteliv</a>
-                  <a href="/Sider/Børneliv.html">Børneliv</a>
-                  <a href="/Sider/Kolding som designby.html">Kolding som designby</a>
-                  <a href="/Sider/Hvad kan Danmark ellers byde på.html">Hvad kan DK ellers byde på?</a>
-                </div>
-
+            <div class="dropdown-content">
+              <a href="/Sider/Foreningsliv.html">Foreningsliv</a>
+              <a href="/Sider/Natteliv.html">Natteliv</a>
+              <a href="/Sider/Børneliv.html">Børneliv</a>
+              <a href="/Sider/Kolding som designby.html"
+                >Kolding som designby</a
+              >
+              <a href="/Sider/Hvad kan Danmark ellers byde på.html"
+                >Hvad kan DK ellers byde på?</a
+              >
+            </div>
           </div>
         </li>
       </ul>
-      
-        <form>
-          <input type="text" name="Søg" placeholder="Søg..">
-        </form>
 
-      
+      <form>
+        <input type="text" name="Søg" placeholder="Søg.." />
+      </form>
+    </nav>
 
-  </nav>
-    
-</body>
+    <!-- FOOTER ANNE -->
+    <footer class="afooter">
+      <!-- /* FOOTER - FØLG OS PÅ */ -->
+      <section class="følgos">
+        <h2>Følg os på</h2>
+        <div class="socialmedia">
+          <img src="/Billedmateriale/instagram-brands.png" />
+          <img src="/Billedmateriale/twitter-brands.png" />
+          <img src="/Billedmateriale/youtube-brands.png" />
+          <img src="/Billedmateriale/facebook-brands.png" />
+        </div>
+      </section>
+      <!-- /* FOOTER - NYTTIGE LINKS */ -->
+
+      <div class="textoglinks-container">
+        <section class="afooter-text">
+          <h4>VisitKolding</h4>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur<br />
+            adipiscing elit, sed do eiusmod tempor<br />
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+        </section>
+
+        <section class="nyttige-links">
+          <ul>
+            <li>
+              <h5>Nyttige links</h5>
+            </li>
+            <li>
+              <a href="#">Link 1</a>
+            </li>
+            <li>
+              <a href="#">Link 2</a>
+            </li>
+            <li>
+              <a href="#">Link 3</a>
+            </li>
+            <li>
+              <a href="#">Link 4</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li><h5>Nyttige links</h5></li>
+
+            <li>
+              <a href="#">Link 1</a>
+            </li>
+            <li>
+              <a href="#">Link 2</a>
+            </li>
+            <li>
+              <a href="#">Link 3</a>
+            </li>
+            <li>
+              <a href="#">Link 4</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <h5>Nyttige links</h5>
+            </li>
+            <li>
+              <a href="#">Link 1</a>
+            </li>
+            <li>
+              <a href="#">Link 2</a>
+            </li>
+            <li>
+              <a href="#">Link 3</a>
+            </li>
+            <li>
+              <a href="#">Link 4</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- FOOTER-STRIP ANNE -->
+      <section class="footer-strip">
+        <p>© 2021 VisitKolding All Rights Reserved.</p>
+
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </section>
+    </footer>
+  </body>
 </html>
