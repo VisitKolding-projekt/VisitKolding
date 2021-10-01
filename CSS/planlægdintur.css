@@ -200,6 +200,112 @@ input[type="text"]:focus {
   color: rgb(141, 13, 13);
 }
 
+header {
+  height: 45vh;
+  max-width: 1630px;
+  background-image: url(/Billedmateriale/cafe2.jpg);
+  background-position: 20vw;
+  background-size: cover;
+  opacity: 60%;
+  position: relative;
+}
+
+h3 {
+  font-size: 4vw;
+
+  width: 30vw;
+  height: 12.4vh;
+  text-align: center;
+}
+
+.h3-container {
+  width: 50vw;
+  background-color: #dcb8b8;
+  position: absolute;
+  top: 19vw;
+  left: 15vw;
+}
+
+section {
+  background-color: #dcb8b8;
+}
+
+.p-container {
+  margin-left: 25vw;
+}
+
+.p-container p {
+  padding: 10vh 0 10vh 0;
+  line-height: 30px;
+}
+
+/* TRAFIK */
+
+.threearticles {
+  background-color: whitesmoke;
+  display: flex;
+}
+
+.trafik {
+  margin: 60px 5vw 60px 5vw;
+}
+
+.trafik p {
+  line-height: 17px;
+  padding: 0;
+  font-size: 12px;
+}
+
+.trafik h4 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.trafik h5 {
+  margin-bottom: 5px;
+}
+
+/* OVERNATNING */
+
+.overnatning {
+  margin: 60px 5vw 60px 5vw;
+}
+
+.overnatning p {
+  line-height: 17px;
+  padding: 0;
+  font-size: 12px;
+}
+
+.overnatning h4 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.overnatning h5 {
+  margin-bottom: 5px;
+}
+
+/* MAD OG DRIKKE */
+.madogdrikke {
+  margin: 60px 5vw 60px 5vw;
+}
+
+.madogdrikke p {
+  line-height: 17px;
+  padding: 0;
+  font-size: 12px;
+}
+
+.madogdrikke h4 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.madogdrikke h5 {
+  margin-bottom: 5px;
+}
+
 /* FOOTER-STRIP */
 
 .footer-strip {
