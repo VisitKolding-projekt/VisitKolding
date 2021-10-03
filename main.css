@@ -143,6 +143,10 @@ header {
   font-size: 1vw;
 }
 
+.figure-content figcaption {
+  background-color: #dcb8b8;
+}
+
 #b1 {
   grid-area: b1;
   background-image: url(./Billedmateriale/torv.jpg);
