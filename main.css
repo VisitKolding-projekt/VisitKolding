@@ -15,7 +15,7 @@ body {
 
 header {
   max-width: 1630px;
-  margin: 60px 0 60px 0;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(4, minmax(250px, 1fr));
@@ -25,6 +25,10 @@ header {
     "b6 b7 b7 b5 b5"
     "b6 b8 b9 b9 b10";
   gap: 20px;
+}
+
+.figure-content {
+  padding: 40px;
 }
 
 .figure-content figure {
@@ -117,17 +121,6 @@ header {
   background-size: cover;
 }
 
-#b1,
-#b6 {
-  margin-left: 70px;
-}
-
-#b3,
-#b5,
-#b10 {
-  margin-right: 70px;
-}
-
 @media screen and (max-width: 768px) {
   header {
     grid-template-columns: 1fr 1fr;
@@ -168,7 +161,7 @@ header {
 #explore-kolding {
   box-sizing: border-box;
   display: grid;
-  margin: 60px;
+  padding: 40px;
   max-width: 1630px;
   font-family: "Roboto";
   gap: 5px;
@@ -247,4 +240,103 @@ header {
   background: none !important;
   height: 600px;
   width: 1630px;
+}
+
+/* ALEX */
+
+#kommende-begivenheder {
+  background-color: #eaeaea;
+}
+
+#kommende-begivenheder h2 {
+  font-size: 35px;
+  font-weight: 700;
+  padding-left: 5vw;
+  padding-top: 5vw;
+  padding-bottom: 2vw;
+  color: #be1212;
+}
+
+.begivenheder-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  margin: 5vw 5vw 0vw 5vw;
+  gap: 10px;
+  max-width: 1630px;
+  grid-template-areas:
+  "begiv1 begiv2 begiv2 begiv3"
+  "begiv4 begiv5 begiv5 begiv6"
+  "begiv7 begiv8 begiv8 begiv9";
+}
+
+.begivenheder-container img {
+  position: relative;
+  bottom: 60px;
+  width: 100%;
+  max-height: 216px;
+  object-fit: cover;
+}
+
+.begivenheder-container p {
+  position: relative;
+  right: 80px;
+}
+
+.begivenheder-container span {
+  font-weight: 500;
+}
+
+.begiv1 {
+  grid-area: begiv1;
+  font-weight: 500;
+  color: #be1212;
+}
+
+.begiv1 span {
+  font-size: 60px;
+}
+
+.begiv2 {
+  grid-area: begiv2;
+}
+
+.begiv3 {
+  grid-area: begiv3;
+}
+
+.begiv4 {
+  grid-area: begiv4;
+  font-weight: 500;
+  color: #be1212;
+}
+
+.begiv4 span {
+  font-size: 60px;
+}
+
+.begiv5 {
+  grid-area: begiv5;
+}
+
+.begiv6 {
+  grid-area: begiv6;
+}
+
+.begiv7 {
+  grid-area: begiv7;
+  font-weight: 500;
+  color: #be1212;
+}
+
+.begiv7 span {
+  font-size: 60px;
+}
+
+.begiv8 {
+  grid-area: begiv8;
+}
+
+.begiv9 {
+  grid-area: begiv9;
 }
