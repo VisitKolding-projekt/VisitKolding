@@ -15,7 +15,7 @@ body {
 
 header {
   max-width: 1630px;
-  margin: 60px auto;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(4, minmax(250px, 1fr));
@@ -25,6 +25,10 @@ header {
     "b6 b7 b7 b5 b5"
     "b6 b8 b9 b9 b10";
   gap: 20px;
+}
+
+.figure-content {
+  padding: 40px;
 }
 
 .figure-content figure {
@@ -157,7 +161,7 @@ header {
 #explore-kolding {
   box-sizing: border-box;
   display: grid;
-  margin: 60px;
+  padding: 40px;
   max-width: 1630px;
   font-family: "Roboto";
   gap: 5px;
