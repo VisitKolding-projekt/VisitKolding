@@ -10,14 +10,14 @@
 .følgos {
   background-color: #be1212;
   position: relative;
-  height: 50vh;
+  height: 40vh;
   width: auto;
 }
 
 .picture-container {
   box-sizing: border-box;
   display: grid;
-  padding: 40px;
+  padding: 10px;
   max-width: 1630px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 300px;
@@ -49,7 +49,8 @@
 .følgos h5 {
   font-size: 30px;
   color: white;
-  font-size: 70px;
+  font-size: 60px;
+  padding-left: 50px;
   padding-right: 120px;
 }
 
@@ -70,7 +71,6 @@
   }
 
   .følgos {
-    background-color: #7e4646;
     position: relative;
     height: 30vh;
   }
@@ -87,7 +87,7 @@
 .footer-text {
   font-size: 20px;
   line-height: 30px;
-  padding: 60px 60px;
+  padding: 40px 60px;
 }
 
 .footer-text h4 {
@@ -106,7 +106,7 @@
   position: absolute;
   display: grid;
   grid-template-columns: auto auto auto;
-  top: 50px;
+  top: 25px;
   right: 60px;
   gap: 30px;
 }
