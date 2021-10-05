@@ -8,7 +8,7 @@
 /* FØLG OS PÅ */
 
 .følgos {
-  background-color: #7e4646;
+  background-color: #be1212;
   position: relative;
   height: 50vh;
   width: auto;
@@ -74,12 +74,6 @@
     position: relative;
     height: 30vh;
   }
-  /* .følgos h5 {
-    color: red;
-    font-size: 70px;
-    position: absolute;
-    left: 70px;
-  } */
 }
 
 @media screen and (max-width: 700px) {
@@ -97,13 +91,14 @@
 }
 
 .footer-text h4 {
+  color: #be1212;
   font-size: 30px;
   line-height: 40px;
 }
 
 .middle-footer {
   position: relative;
-  background-color: #dcb8b8;
+  background-color: #eaeaea;
   height: auto;
 }
 
@@ -121,6 +116,7 @@
 }
 
 .nyttige-links h5 {
+  color: #be1212;
   font-size: 20px;
   font-weight: 400;
   line-height: 40px;
@@ -138,7 +134,7 @@
 }
 
 .nyttige-links a:hover {
-  color: rgb(141, 13, 13);
+  color: #be1212;
 }
 
 /* FOOTER-STRIP */
@@ -172,6 +168,6 @@
 }
 
 .footer-strip li a:hover {
-  color: rgb(141, 13, 13);
+  color: #be1212;
   transition: 300ms ease-in-out;
 }
