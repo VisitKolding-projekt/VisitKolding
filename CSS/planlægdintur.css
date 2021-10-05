@@ -101,6 +101,10 @@ header {
   grid-area: d;
 }
 
+.item4 img {
+  height: 40vh;
+}
+
 .grid-containerart {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
