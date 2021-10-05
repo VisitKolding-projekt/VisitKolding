@@ -19,8 +19,8 @@ header {
   position: relative;
 }
 
-h3 {
-  color: whitesmoke;
+.h3-container h3 {
+  color: #be1212;
   font-size: 4vw;
   width: 30vw;
   height: 11vh;
@@ -30,6 +30,7 @@ h3 {
 }
 
 .h3-container {
+  background-color: #eaeaea;
   width: 40vw;
   height: 100px;
   border-style: ridge;
@@ -38,45 +39,40 @@ h3 {
   left: 15vw;
 }
 
-.h3-container img {
-  width: 100%;
-  height: 100px;
-}
-
-.bg-section {
-  background-color: transparent;
-}
-
-.p-container {
+.bg-section .p-container {
   padding: 80px 0 60px 0;
   margin: 0 40px;
   display: flex;
   justify-content: center;
 }
 
-.p-container p {
+.bg-section .p-container p {
+  color: #313131;
   line-height: 30px;
 }
 
 /* ARTIKLER */
 
 .threearticles {
-  background-color: whitesmoke;
+  background-color: #eaeaea;
   display: flex;
 }
 
 .threearticles p {
+  color: #313131;
   line-height: 17px;
   padding: 0;
   font-size: 12px;
 }
 
 .threearticles h4 {
+  color: #be1212;
   font-size: 20px;
   margin-bottom: 5px;
 }
 
 .threearticles h5 {
+  color: #313131;
   margin-bottom: 5px;
 }
 
@@ -84,4 +80,49 @@ h3 {
 .overnatning,
 .madogdrikke {
   padding: 40px;
+}
+
+/* ARTICLE-GRID */
+
+.article-grid {
+  background-color: whitesmoke;
+}
+
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: b;
+}
+.item3 {
+  grid-area: c;
+}
+.item4 {
+  grid-area: d;
+}
+
+.grid-containerart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-template-areas:
+    "b b a"
+    "d d none"
+    "c c none";
+}
+
+.grid-containerart > div {
+  position: relative;
+  font-size: 20px;
+  color: #313131;
+  font-family: PlayFairT;
+  padding: 30px 60px 30px;
+}
+
+.grid-containerart h3 {
+  color: #be1212;
+}
+
+.aimg {
+  width: 100%;
 }

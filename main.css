@@ -42,10 +42,11 @@ header {
 
 .h2-grid {
   font-size: 15px;
+  color: #be1212;
 }
 
 .figure-content figcaption {
-  background-color: rgba(199, 199, 199, 0.726);
+  background-color: #eaeaea9b;
   border-style: hidden;
   border-color: #47464694;
   border-radius: 5px;
@@ -265,9 +266,9 @@ header {
   gap: 10px;
   max-width: 1630px;
   grid-template-areas:
-  "begiv1 begiv2 begiv2 begiv3"
-  "begiv4 begiv5 begiv5 begiv6"
-  "begiv7 begiv8 begiv8 begiv9";
+    "begiv1 begiv2 begiv2 begiv3"
+    "begiv4 begiv5 begiv5 begiv6"
+    "begiv7 begiv8 begiv8 begiv9";
 }
 
 .begivenheder-container img {
