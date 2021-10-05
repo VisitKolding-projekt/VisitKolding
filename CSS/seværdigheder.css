@@ -112,12 +112,77 @@ input[type="text"]:focus {
   width: 15%;
 }
 
+/* MAIN */
 
+header{ 
+background-image: url(../Billedmateriale/Historie.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 579px;
+height: 100%;
+display: flex;
+align-items: flex-end;
+}
 
+header h1 {
+  background-color: white;
+color: black;
+font-size: 100px;
+}
 
+#lead{
+width: 100%;
+display: flex;
+justify-content: center;
+}
 
+#lead article{
+  max-width: 970px;
+}
 
+#grid{
+box-sizing: border-box;
+display: grid;
+margin: 60px;
+max-width: 1630px;
+font-family: "Roboto";
+font-weight: 100;
+color: white;
+background-color: black;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: minmax(250px, 600px) minmax(250px, 600px);
+grid-template-areas:
+  "box1 box2"
+  "box3 box4";
+}
 
+#grid p, h3{
+  padding: 15px;
+}
+
+#grid img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+#box1 {
+  grid-area: box1;
+  
+}
+
+#box2 {
+  grid-area: box2;
+}
+
+#box3 {
+  grid-area: box3;
+  
+}
+
+#box4 {
+  grid-area: box4;
+}
 
 
 /* FOOTER */
