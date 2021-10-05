@@ -112,63 +112,84 @@ input[type="text"]:focus {
   width: 15%;
 }
 
-/* MAIN */
+/* MAIN / Penille*/
 
-header{ 
-background-image: url(../Billedmateriale/Historie.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-min-height: 579px;
-height: 100%;
-display: flex;
-align-items: flex-end;
+header {
+  background-image: url(../Billedmateriale/Historie.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 579px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 header h1 {
   background-color: white;
-color: black;
-font-size: 100px;
+  color: black;
+  font-size: 45px;
+  padding: 30px;
+  position: relative;
+  margin-left: 100px;
+  width: 100%;
+  max-width: 660px;
+  font-family: "Roboto";
+  font-weight: 600;
 }
 
-#lead{
-width: 100%;
-display: flex;
-justify-content: center;
+#lead a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-#lead article{
+#lead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+#lead article {
+  padding: 20px;
+  margin: 30px;
+  text-align: center;
   max-width: 970px;
 }
 
-#grid{
-box-sizing: border-box;
-display: grid;
-margin: 60px;
-max-width: 1630px;
-font-family: "Roboto";
-font-weight: 100;
-color: white;
-background-color: black;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: minmax(250px, 600px) minmax(250px, 600px);
-grid-template-areas:
-  "box1 box2"
-  "box3 box4";
+#grid {
+  box-sizing: border-box;
+  display: grid;
+  max-width: 1630px;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: black;
+  background-color: #eaeaea;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(250px, 600px) minmax(250px, 600px);
+  grid-template-areas:
+    "box1 box2"
+    "box4 box3";
 }
 
-#grid p, h3{
-  padding: 15px;
+#grid h3 {
+  padding: 10px 10px;
 }
 
-#grid img{
-width: 100%;
-height: 100%;
-object-fit: cover;
+#grid p {
+  padding: 10px 10px 10px;
+}
+
+#grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #box1 {
   grid-area: box1;
-  
 }
 
 #box2 {
@@ -177,13 +198,11 @@ object-fit: cover;
 
 #box3 {
   grid-area: box3;
-  
 }
 
 #box4 {
   grid-area: box4;
 }
-
 
 /* FOOTER */
 
