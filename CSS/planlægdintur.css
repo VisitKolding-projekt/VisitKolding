@@ -55,7 +55,8 @@ header {
 
 .threearticles {
   background-color: #eaeaea;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .threearticles p {
@@ -79,10 +80,29 @@ header {
 .trafik,
 .overnatning,
 .madogdrikke {
-  padding: 40px;
+  padding: 60px;
+}
+
+/* LESS THAN 1000px; */
+@media only screen and (max-width: 1000px) {
+  .threearticles {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
 
 /* ARTICLE-GRID */
+
+.grid-containerart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "b b a"
+    "c c none"
+    "d d none";
+  padding: 60px;
+}
 
 .article-grid {
   background-color: whitesmoke;
@@ -110,17 +130,6 @@ header {
   grid-area: d;
 }
 
-.grid-containerart {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    "b b a"
-    "c c none"
-    "d d none";
-  padding: 60px;
-}
-
 figure img {
   width: 100%;
 }
@@ -136,4 +145,19 @@ figure img {
 .grid-containerart h3 {
   color: #be1212;
   line-height: 40px;
+}
+
+/* LESS THAN 1000px; */
+@media only screen and (max-width: 1000px) {
+  .grid-containerart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "a a"
+      "b b"
+      "c c"
+      "d d";
+    padding: 60px;
+  }
 }
