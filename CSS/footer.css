@@ -9,56 +9,111 @@
 
 .følgos {
   background-color: #7e4646;
-  height: 20vw;
-}
-
-.følgos h2 {
-  color: white;
-  margin-left: 5vw;
-  font-size: 4vw;
-  position: absolute;
-  top: 7vw;
-}
-
-.socialmedia img {
   position: relative;
-  left: 35vw;
-  top: 4vw;
-  margin: 2vw;
+  height: 50vh;
+  width: auto;
+}
+
+.picture-container {
+  box-sizing: border-box;
+  display: grid;
+  padding: 40px;
+  max-width: 1630px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  grid-template-areas: "a1 a1 a2 a3 a4 a5";
+  position: absolute;
+  top: 75px;
+}
+
+#a1 {
+  grid-area: a1;
+}
+
+#a2 {
+  grid-area: a2;
+}
+
+#a3 {
+  grid-area: a3;
+}
+
+#a4 {
+  grid-area: a4;
+}
+
+#a5 {
+  grid-area: a5;
+}
+
+.følgos h5 {
+  font-size: 30px;
+  color: white;
+  font-size: 70px;
+  padding-right: 120px;
+}
+
+@media screen and (max-width: 700px) {
+  .picture-container {
+    box-sizing: border-box;
+    display: grid;
+    gap: 20px;
+    max-width: 1630px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(9, minmax(150px, 1fr));
+    grid-template-areas:
+      "a1 a1"
+      "a2 a3"
+      "a4 a5";
+    position: absolute;
+    top: 75px;
+  }
+
+  .følgos {
+    background-color: #7e4646;
+    position: relative;
+    height: 30vh;
+  }
+  /* .følgos h5 {
+    color: red;
+    font-size: 70px;
+    position: absolute;
+    left: 70px;
+  } */
+}
+
+@media screen and (max-width: 700px) {
+  .følgos {
+    grid-template-columns: auto;
+  }
 }
 
 /* NYTTIGE LINKS */
 
-.afooter-text {
-  position: absolute;
-  top: 5vw;
-  font-size: 1.2vw;
-  line-height: 2vw;
-  margin: 0 5vw 5vw 5vw;
+.footer-text {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 60px 60px;
 }
 
-.afooter-text h4 {
-  font-size: 2vw;
-  margin-bottom: 1.5vw;
+.footer-text h4 {
+  font-size: 30px;
+  line-height: 40px;
 }
 
-.textoglinks {
-  margin-right: 5vw;
-}
-
-.textoglinks-container {
+.middle-footer {
   position: relative;
   background-color: #dcb8b8;
-  height: 20vw;
+  height: auto;
 }
 
 .nyttige-links {
   position: absolute;
   display: grid;
   grid-template-columns: auto auto auto;
-  top: 2.5vw;
-  right: 5vw;
-  gap: 5vw;
+  top: 50px;
+  right: 60px;
+  gap: 30px;
 }
 
 .nyttige-links ul {
@@ -66,20 +121,20 @@
 }
 
 .nyttige-links h5 {
-  font-size: 1.5vw;
+  font-size: 20px;
   font-weight: 400;
-  margin-bottom: 1vw;
+  line-height: 40px;
 }
 
 .nyttige-links li {
   text-align: center;
-  font-size: 1vw;
+  font-size: 15px;
 }
 
 .nyttige-links a {
   color: black;
   text-decoration: none;
-  line-height: 3vw;
+  line-height: 30px;
 }
 
 .nyttige-links a:hover {
