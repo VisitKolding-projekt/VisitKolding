@@ -120,7 +120,7 @@ header {
   font-size: 20px;
   color: #313131;
   font-family: PlayFairT;
-  padding: 30px 60px 30px;
+  padding: 60px;
 }
 
 .grid-containerart h3 {
@@ -129,4 +129,6 @@ header {
 
 .aimg {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
