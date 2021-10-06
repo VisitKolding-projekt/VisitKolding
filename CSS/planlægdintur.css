@@ -11,12 +11,13 @@ body {
 
 header {
   max-width: 1630px;
-  background-image: url(/Billedmateriale/cafe2.jpg);
-  height: 350px;
-  background-position: center;
-  background-size: cover;
-  opacity: 60%;
   position: relative;
+}
+
+header img {
+  width: 100%;
+  height: 300px;
+  opacity: 50%;
 }
 
 .h3-container h3 {
@@ -35,15 +36,15 @@ header {
   background-color: white;
   border-color: #eaeaea;
   position: relative;
-  top: 299px;
+  top: -55px;
   left: 60px;
 }
 
 .bg-section .p-container {
-  padding: 80px 0 60px 0;
-  margin: 0 40px;
+  padding: 0 0 60px 0;
   display: flex;
   justify-content: center;
+  margin: 0 60px;
 }
 
 .bg-section .p-container p {
@@ -61,8 +62,6 @@ header {
 
 .threearticles p {
   color: #313131;
-  line-height: 17px;
-  padding: 0;
   font-size: 12px;
 }
 
@@ -110,6 +109,10 @@ header {
 
 #p1 {
   grid-area: a;
+}
+
+#p1 img {
+  padding-bottom: 30px;
 }
 
 #t1 {
