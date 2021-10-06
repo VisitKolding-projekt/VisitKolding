@@ -147,7 +147,7 @@
   color: #be1212;
 }
 
-/* LESS THAN 1000px; */
+/* LESS THAN 700px; */
 @media only screen and (max-width: 700px) {
   .middle-footer {
     position: relative;
