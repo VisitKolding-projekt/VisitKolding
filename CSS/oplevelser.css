@@ -5,6 +5,7 @@ body {
   font-family: "Roboto";
 }
 
+
 nav {
   background-color: #f2f2f2;
   font-weight: 400;
@@ -232,7 +233,7 @@ input[type="text"]:focus {
 }
 
 
-
+/* Header */
 header{
   background-image: url(/Billedmateriale/indk├©bscenter.jpg);
   background-size: cover;
@@ -254,6 +255,8 @@ header h1 {
   display: flex;
   justify-content: center;
 }
+
+/* Gågaden - Havnen - events */
 
 #grid{
   margin: 60px;
