@@ -79,25 +79,31 @@ nav img {
 
 /* SØGEFELT */
 
-input[type="text"] {
-  width: 140px;
-  position: absolute;
-  right: 1vw;
-  top: 1vw;
-  margin-right: 5vw;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url(./Billedmateriale/Search.png);
-  background-position: 5px 5px;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  padding: 5px 40px 5px 40px;
-  transition: 0.4s ease-in-out;
+nav form{
+height: 100px;
+width: 100%;
+display: none;
+justify-content: center;
+align-items: center;
+position: absolute;
+background-color: rgba(0, 0, 0, 0.5);
 }
 
-input[type="text"]:focus {
-  width: 15%;
+nav form input{
+  width: 40%;
+  height: 50px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  text-align: center;
+}
+
+nav form.active{
+  display: flex;
+}
+
+nav svg{
+  cursor: pointer;
+  width: 1vw;
+  height: 1vw;
 }
