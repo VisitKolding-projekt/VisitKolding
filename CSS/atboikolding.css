@@ -8,3 +8,14 @@ body {
   margin: auto;
   font-family: "Roboto";
 }
+
+header {
+  background-image: url(https://picsum.photos/seed/picsum/1600/500);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 300px;
+  text-align: ;
+}
+h1 {
+}
