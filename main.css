@@ -248,12 +248,13 @@ header {
 
 #kommende-begivenheder {
   background-color: #eaeaea;
+  margin-bottom: 40px;
 }
 
 #kommende-begivenheder h2 {
   font-size: 35px;
   font-weight: 700;
-  padding-left: 5vw;
+  padding-left: 60px;
   padding-top: 5vw;
   padding-bottom: 2vw;
   color: #be1212;
@@ -261,9 +262,9 @@ header {
 
 .begivenheder-container {
   display: grid;
+  background-color: #eaeaea;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0;
-  margin: 5vw 5vw 0vw 5vw;
+  padding: 30px 60px;
   gap: 10px;
   max-width: 1630px;
   grid-template-areas:
@@ -289,56 +290,80 @@ header {
   font-weight: 500;
 }
 
-.begiv1 {
+#begiv1 {
   grid-area: begiv1;
   font-weight: 500;
   color: #be1212;
 }
 
-.begiv1 span {
+#begiv1 span {
   font-size: 60px;
 }
 
-.begiv2 {
+#begiv2 {
   grid-area: begiv2;
 }
 
-.begiv3 {
+#begiv3 {
   grid-area: begiv3;
 }
 
-.begiv4 {
+#begiv4 {
   grid-area: begiv4;
   font-weight: 500;
   color: #be1212;
 }
 
-.begiv4 span {
+#begiv4 span {
   font-size: 60px;
 }
 
-.begiv5 {
+#begiv5 {
   grid-area: begiv5;
 }
 
-.begiv6 {
+#begiv6 {
   grid-area: begiv6;
 }
 
-.begiv7 {
+#begiv7 {
   grid-area: begiv7;
   font-weight: 500;
   color: #be1212;
 }
 
-.begiv7 span {
+#begiv7 span {
   font-size: 60px;
 }
 
-.begiv8 {
+#begiv8 {
   grid-area: begiv8;
 }
 
-.begiv9 {
+#begiv9 {
   grid-area: begiv9;
+}
+
+@media screen and (max-width: 700px) {
+  .begivenheder-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "begiv1 begiv2"
+      "begiv3 begiv3"
+      "begiv4 begiv5"
+      "begiv6 begiv6"
+      "begiv7 begiv8"
+      "begiv9 begiv9";
+    padding-left: 40px;
+    padding-right: 0;
+  }
+  .begivenheder-container img {
+    position: relative;
+    bottom: 130px;
+    width: 30%;
+  }
+
+  #kommende-begivenheder h2 {
+    padding-left: 30px;
+  }
 }
