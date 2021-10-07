@@ -10,78 +10,157 @@ body {
 }
 
 header {
-  height: 45vh;
   max-width: 1630px;
-  background-image: url(/Billedmateriale/cafe2.jpg);
-  background-position: 20vw;
-  background-size: cover;
-  opacity: 60%;
   position: relative;
 }
 
-h3 {
-  color: whitesmoke;
-  font-size: 4vw;
-  width: 30vw;
-  height: 11vh;
+header img {
+  width: 100%;
+  height: 300px;
+  opacity: 50%;
+}
+
+.h3-container h3 {
+  color: #be1212;
+  background-color: white;
+  font-size: 50px;
   text-align: center;
   position: absolute;
   top: 15px;
 }
 
 .h3-container {
-  width: 40vw;
+  width: 680px;
   height: 100px;
-  border-style: ridge;
-  position: absolute;
-  top: 20.5vw;
-  left: 15vw;
+  border-style: solid;
+  background-color: white;
+  border-color: #eaeaea;
+  position: relative;
+  top: -55px;
+  left: 60px;
 }
 
-.h3-container img {
-  width: 100%;
-  height: 100px;
-}
-
-.bg-section {
-  background-color: transparent;
-}
-
-.p-container {
-  padding: 80px 0 60px 0;
-  margin: 0 40px;
+.bg-section .p-container {
+  padding: 0 0 60px 0;
   display: flex;
   justify-content: center;
+  margin: 0 60px;
 }
 
-.p-container p {
+.bg-section .p-container p {
+  color: #313131;
   line-height: 30px;
 }
 
 /* ARTIKLER */
 
 .threearticles {
-  background-color: whitesmoke;
-  display: flex;
+  background-color: #eaeaea;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .threearticles p {
-  line-height: 17px;
-  padding: 0;
+  color: #313131;
   font-size: 12px;
 }
 
 .threearticles h4 {
+  color: #be1212;
   font-size: 20px;
   margin-bottom: 5px;
 }
 
 .threearticles h5 {
+  color: #313131;
   margin-bottom: 5px;
 }
 
 .trafik,
 .overnatning,
 .madogdrikke {
-  padding: 40px;
+  padding: 60px;
+}
+
+/* LESS THAN 1000px; */
+@media only screen and (max-width: 1000px) {
+  .threearticles {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+/* ARTICLE-GRID */
+
+.grid-containerart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "b b a"
+    "c c none"
+    "d d none";
+  padding: 60px;
+}
+
+.article-grid {
+  background-color: whitesmoke;
+}
+
+#p1 {
+  grid-area: a;
+}
+
+#p1 img {
+  padding-bottom: 30px;
+}
+
+#t1 {
+  grid-area: b;
+  padding-bottom: 60px;
+  padding-right: 60px;
+}
+#p2 {
+  grid-area: c;
+}
+
+#p2 img {
+  height: 40vh;
+  padding-bottom: 30px;
+}
+
+#t2 {
+  grid-area: d;
+}
+
+figure img {
+  width: 100%;
+}
+
+.grid-containerart > div {
+  position: relative;
+  font-size: 20px;
+  color: #313131;
+  font-family: PlayFairT;
+  padding: 60px;
+}
+
+.grid-containerart h3 {
+  color: #be1212;
+  line-height: 40px;
+}
+
+/* LESS THAN 1000px; */
+@media only screen and (max-width: 700px) {
+  .grid-containerart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "a a"
+      "b b"
+      "c c"
+      "d d";
+    padding: 60px;
+  }
 }
