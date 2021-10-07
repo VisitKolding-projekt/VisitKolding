@@ -66,17 +66,19 @@ ul li a:hover {
   position: relative;
   padding: 40px;
   display: flex;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  max-height: 300px;
   margin: 60px;
   text-align: center;
   font-family: arial;
   gap: 40px;
+  background-color: #eaeaea;
+  border-style: ridge;
+  border-color: black;
 }
 
 .card img {
