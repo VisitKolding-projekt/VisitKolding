@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1630px;
+  font-family: "Roboto";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  padding-bottom: 50px;
+}
+
+header img {
+  width: 45%;
+  padding: 20px;
+  position: relative;
+  margin-left: 25vw;
+}
+
+h1 {
+  color: #be1212;
+  font-size: 40px;
+  display: inline-block;
+  position: absolute;
+  top: 60px;
+  right: 200px;
+  width: 15%;
+  transform: rotate(-30deg);
+}
+
+nav {
+  background-color: #eaeaea;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+ul li a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+
+ul li a:hover {
+  color: #be1212;
+  transition: 300ms ease-in-out;
+}
+
+.shoppingcards-tshirts,
+.shoppingcards-billetter,
+.shoppingcards-souvenirs {
+  position: relative;
+  padding: 40px;
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  max-height: 300px;
+  margin: 60px;
+  text-align: center;
+  font-family: arial;
+  gap: 40px;
+}
+
+.card img {
+  width: 50%;
+  padding: 20px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
