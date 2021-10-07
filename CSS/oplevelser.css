@@ -244,16 +244,35 @@ header{
   align-items: flex-end;
 }
 
-header h1 {
- font-size: 100px;
- background-color: white;
- color:rgb(180, 176, 176);
+.oplevelser-title {
+  position: relative;
+  left: 90px;
+  width: 680px;
+  height: 100px;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #eaeaea;
+  /* padding: 2vw; */
+  /* padding-right: 15vw; */
+  color: #be1212;
+}
+
+.oplevelser-title h1 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 #lead {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  /* width: 100%; */
+  position: relative;
+  left: 185px;
+  padding: 100px;
+  width: 75%;
+  text-align: center;
+  text-align: justify;
 }
 
 /* Gågaden - Havnen - events */
@@ -262,9 +281,9 @@ header h1 {
   margin: 60px;
   max-width: 1630px;
   font-family: "Roboto";
-  font-weight: 100;
-  color: white;
-  background-color:rgb(180, 176, 176);
+  font-weight: 400;
+  color: black;
+  background-color: #eaeaea;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -275,9 +294,16 @@ header h1 {
   "box5 box6";
 }
 
-#grid p, h2{
+#grid p {
   padding: 15px;
+  text-align: justify;
 }
+
+#grid h2 {
+  padding: 15px;
+  color: #be1212;
+}
+
 #grid img{
   height: 100%;
   width: 100%;
