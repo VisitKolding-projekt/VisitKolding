@@ -27,36 +27,42 @@
 
     <nav>
       <ul>
-        <li>
+        <li class="nav-item">
           <a href="#tshirts">Tøj</a>
         </li>
 
         <li>
-          <a href="#billetter">Billetter</a>
+          <a class="nav-link" data-bs-toggle="tab" href="#billetter"
+            >Billetter</a
+          >
         </li>
 
         <li>
           <a href="#souvenirs">Souvenirs</a>
         </li>
-
-        <li>
-          <a class="betaling" href="#">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-cart3"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-              />
-            </svg>
-          </a>
-        </li>
       </ul>
     </nav>
+
+    <section class="indkøbskurv">
+      <div id="flip">
+        <a class="betaling" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-cart3"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <div id="panel">Din indkøbskurv er tom</div>
+    </section>
 
     <section id="tshirts" class="shoppingcards-tshirts">
       <div class="card">
@@ -65,9 +71,9 @@
           alt="T-shirt"
         />
         <h2>T-shirt</h2>
-        <p class="price">$19.99</p>
-        <p>Some text about the jeans..</p>
-        <p><button>Add to Cart</button></p>
+        <p class="price">149 DKK</p>
+        <p>Noget tekst om t-shirten..</p>
+        <p><button>Tilføj til kurven</button></p>
       </div>
 
       <div class="card">
@@ -76,9 +82,9 @@
           alt="T-shirt"
         />
         <h2>T-shirt</h2>
-        <p class="price">$19.99</p>
-        <p>Some text about the jeans..</p>
-        <p><button>Add to Cart</button></p>
+        <p class="price">149 DKK</p>
+        <p>Noget tekst om t-shirten..</p>
+        <p><button>Tilføj til kurven</button></p>
       </div>
 
       <div class="card">
@@ -87,9 +93,9 @@
           alt="T-shirt"
         />
         <h2>T-shirt</h2>
-        <p class="price">$19.99</p>
-        <p>Some text about the jeans..</p>
-        <p><button>Add to Cart</button></p>
+        <p class="price">149 DKK</p>
+        <p>Noget tekst om t-shirten..</p>
+        <p><button>Tilføj til kurven</button></p>
       </div>
     </section>
 
@@ -97,25 +103,25 @@
       <div class="card">
         <img src="/Billedmateriale/ntteliv.jpg" alt="Koncert" />
         <h2>Koncert</h2>
-        <p class="price">$19.99</p>
-        <p>Some text about the concert</p>
-        <p><button>Add to Cart</button></p>
+        <p class="price">1200 DKK</p>
+        <p>Noget tekst om koncerten..</p>
+        <p><button>Tilføj til kurven</button></p>
       </div>
 
       <div class="card">
         <img src="/Billedmateriale/kunst.jpg" alt="Kunst" />
         <h2>Museum</h2>
-        <p class="price">$19.99</p>
-        <p>Some text about the museum</p>
-        <p><button>Add to Cart</button></p>
+        <p class="price">249 DKK</p>
+        <p>Noget tekst om museet..</p>
+        <p><button>Tilføj til kurven</button></p>
       </div>
 
       <div class="card">
         <img src="/Billedmateriale/Foreningsliv/ha╠èndbold.jpg" alt="T-shirt" />
         <h2>Håndboldkamp</h2>
-        <p class="price">$19.99</p>
-        <p>Some text about the game</p>
-        <p><button>Add to Cart</button></p>
+        <p class="price">699 DKK</p>
+        <p>Noget tekst om kampen</p>
+        <p><button>Tilføj til kurven</button></p>
       </div>
     </section>
 
@@ -123,26 +129,36 @@
       <div class="card">
         <img src="/Billedmateriale/designskolen.jpg" alt="T-shirt" />
         <h2>Souvenir</h2>
-        <p class="price">$19.99</p>
-        <p>Some text about it</p>
-        <p><button>Add to Cart</button></p>
+        <p class="price">49 DKK</p>
+        <p>Noget tekst om det..</p>
+        <p><button>Tilføj til kurven</button></p>
       </div>
 
       <div class="card">
         <img src="/Billedmateriale/designskolen.jpg" alt="T-shirt" />
         <h2>Souvenir</h2>
-        <p class="price">$19.99</p>
-        <p>Some text about it</p>
-        <p><button>Add to Cart</button></p>
+        <p class="price">69 DKK</p>
+        <p>Noget tekst om det..</p>
+        <p><button>Tilføj til kurven</button></p>
       </div>
 
       <div class="card">
         <img src="/Billedmateriale/designskolen.jpg" alt="T-shirt" />
         <h2>Souvenir</h2>
-        <p class="price">$19.99</p>
-        <p>Some text about it</p>
-        <p><button>Add to Cart</button></p>
+        <p class="price">29 DKK</p>
+        <p>Noget tekst om det..</p>
+        <p><button>Tilføj til kurven</button></p>
       </div>
     </section>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
   </body>
 </html>
