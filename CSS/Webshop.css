@@ -5,8 +5,18 @@
 }
 
 body {
-  max-width: 1630px;
+  max-width: 1920px;
   font-family: "Roboto";
+}
+
+.webshop-container {
+  max-width: 1630px;
+  margin: auto auto;
+}
+
+.allsections {
+  max-width: 1630px;
+  margin: auto auto;
 }
 
 html {
@@ -95,7 +105,7 @@ ul li a:hover {
 .shoppingcards-tshirts,
 .shoppingcards-billetter,
 .shoppingcards-souvenirs {
-  position: relative;
+  justify-content: center;
   padding: 30px;
   margin-top: 60px;
   display: flex;
