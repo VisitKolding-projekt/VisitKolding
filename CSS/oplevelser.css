@@ -272,6 +272,7 @@ header{
   left: 185px;
   padding: 100px;
   width: 75%;
+  height: 100%;
   text-align: center;
   text-align: justify;
 }
@@ -281,6 +282,7 @@ header{
   max-width: 1630px;
   font-family: "Roboto";
   font-weight: 400;
+  height: 100%;
   color: black;
   background-color: #eaeaea;
   box-sizing: border-box;
