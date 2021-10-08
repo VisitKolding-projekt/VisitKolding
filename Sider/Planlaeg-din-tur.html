@@ -12,47 +12,52 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="/CSS/planlægdintur.css" />
     <link rel="stylesheet" href="/CSS/nav.css" />
     <link rel="stylesheet" href="/CSS/footer.css" />
   </head>
   <body>
     <nav>
-      <a href="/index.html"
-        ><img src="/Billedmateriale/logo_33pix_hoj-01@2x.png"
-      /></a>
+    
+        <a href="/index.html"
+          ><img src="/Billedmateriale/logo_33pix_hoj-01@2x.png"
+        /></a>
 
-      <ul class="a-ul">
-        <!-- OPLEVELSER DROPDOWN -->
+        <ul class="a-ul">
+          <!-- OPLEVELSER DROPDOWN -->
 
-        <li>
-          <div class="dropdown">
-            <a href="/Sider/Oplevelser.html">Oplevelser</a>
+          <li>
+            <div class="dropdown">
+              <a href="/Sider/Oplevelser.html">Oplevelser</a>
 
-            <div class="dropdown-content">
-              <a href="/Sider/Gågaden.html">Gågaden</a>
-              <a href="/Sider/Havnen.html">Havnen</a>
-              <a href="/Sider/Events.html">Events</a>
+              <div class="dropdown-content">
+                <a href="/Sider/Gågaden.html">Gågaden</a>
+                <a href="/Sider/Havnen.html">Havnen</a>
+                <a href="/Sider/Events.html">Events</a>
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <!-- SEVÆRDIGHEDER DROPDOWM -->
+          <!-- SEVÆRDIGHEDER DROPDOWM -->
 
-        <li>
-          <div class="dropdown">
-            <a href="/Sider/Seværdigheder.html">Seværdigheder</a>
+          <li>
+            <div class="dropdown">
+              <a href="/Sider/Seværdigheder.html">Seværdigheder</a>
 
-            <div class="dropdown-content">
-              <a href="/Sider/Historiske bygninger.html"
-                >Historiske bygninger</a
-              >
-              <a href="/Sider/Geografisk have.html">Geografisk have</a>
+              <div class="dropdown-content">
+                <a href="/Sider/Historiske bygninger.html"
+                  >Historiske bygninger</a
+                >
+                <a href="/Sider/Geografisk have.html">Geografisk have</a>
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <!-- PLANLÆG DIN TUR DROPDOWN -->
+          <!-- PLANLÆG DIN TUR DROPDOWN -->
 
         <li>
           <div class="dropdown">
@@ -63,32 +68,52 @@
               <a href="../Sider/Planlaeg-din-tur.html#overnatning">Overnatning</a>
               <a href="../Sider/Planlaeg-din-tur.html#madogdrikke">Mad & Drikke</a>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <!-- AT BO I KOLDING DROPDOWN -->
+          <!-- AT BO I KOLDING DROPDOWN -->
 
-        <li>
-          <div class="dropdown">
-            <a href="/Sider/At bo i Kolding.html">At bo i Kolding</a>
+          <li>
+            <div class="dropdown">
+              <a href="/Sider/At bo i Kolding.html">At bo i Kolding</a>
 
-            <div class="dropdown-content">
-              <a href="/Sider/Foreningsliv.html">Foreningsliv</a>
-              <a href="/Sider/Natteliv.html">Natteliv</a>
-              <a href="/Sider/Børneliv.html">Børneliv</a>
-              <a href="/Sider/Kolding som designby.html"
-                >Kolding som designby</a
-              >
-              <a href="/Sider/Hvad kan Danmark ellers byde på.html"
-                >Hvad kan DK ellers byde på?</a
-              >
+              <div class="dropdown-content">
+                <a href="/Sider/Foreningsliv.html">Foreningsliv</a>
+                <a href="/Sider/Natteliv.html">Natteliv</a>
+                <a href="/Sider/Børneliv.html">Børneliv</a>
+                <a href="/Sider/Kolding som designby.html"
+                  >Kolding som designby</a
+                >
+                <a href="/Sider/Hvad kan Danmark ellers byde på.html"
+                  >Hvad kan DK ellers byde på?</a
+                >
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
 
-      <form>
-        <input type="text" name="Søg" placeholder="Søg.." />
+          <li>
+            <a href="/Sider/Webshop.html"> Webshop </a>
+          </li>
+
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              onclick="toggleSearch()"
+              viewBox="0 0 25.42 25.425"
+            >
+              <path
+                id="search-solid"
+                d="M25.075,21.981l-4.95-4.95a1.191,1.191,0,0,0-.844-.348h-.809a10.323,10.323,0,1,0-1.788,1.788v.809a1.191,1.191,0,0,0,.348.844l4.95,4.95a1.187,1.187,0,0,0,1.683,0L25.07,23.67A1.2,1.2,0,0,0,25.075,21.981Zm-14.747-5.3a6.356,6.356,0,1,1,6.356-6.356A6.352,6.352,0,0,1,10.328,16.683Z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <form id="search">
+        <input
+          type="text"
+          name="Søg"
+          placeholder="Skriv det du søger efter.."
+        />
       </form>
     </nav>
 
@@ -346,5 +371,16 @@
         </ul>
       </section>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

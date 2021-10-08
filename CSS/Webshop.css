@@ -47,34 +47,45 @@ h1 {
   transform: rotate(-30deg);
 }
 
-nav {
+/* TEST START */
+.mobile-container {
+  max-width: 1630px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
   background-color: #eaeaea;
-  box-shadow: #000 0px 4px 40px 1px;
   position: relative;
 }
 
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  left: 270px;
-  gap: 200px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.topnav #myLinks {
+  display: none;
 }
 
-ul li a {
-  font-size: 25px;
-  font-weight: 500;
+.topnav a {
+  color: black;
+  padding: 14px 16px;
   text-decoration: none;
-  color: #be1212;
-  cursor: pointer;
-  scroll-behavior: smooth;
+  font-size: 17px;
+  display: block;
 }
 
-ul li a:hover {
-  color: #0e0c0c;
-  transition: 300ms ease-in-out;
+.topnav a.icon {
+  background-color: #eaeaea;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: gainsboro;
+}
+
+.active {
+  background-color: #eaeaea;
 }
 
 .indkøbskurv {
@@ -95,7 +106,7 @@ ul li a:hover {
   padding: 30px;
   display: none;
   width: auto;
-  background-color: #a5a5a5;
+  background-color: gainsboro;
 }
 
 #flip a {
