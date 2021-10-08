@@ -47,7 +47,51 @@ h1 {
   transform: rotate(-30deg);
 }
 
-nav {
+/* TEST START */
+.mobile-container {
+  max-width: 1630px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #eaeaea;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background-color: #eaeaea;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: gainsboro;
+  color: #eaeaea;
+}
+
+.active {
+  background-color: #eaeaea;
+}
+
+/* TEST SLUT */
+
+/* nav {
   background-color: #eaeaea;
   box-shadow: #000 0px 4px 40px 1px;
   position: relative;
@@ -75,7 +119,7 @@ ul li a {
 ul li a:hover {
   color: #0e0c0c;
   transition: 300ms ease-in-out;
-}
+} */
 
 .indkøbskurv {
   padding: 50px;
