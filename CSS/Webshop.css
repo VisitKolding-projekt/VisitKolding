@@ -82,44 +82,11 @@ h1 {
 
 .topnav a:hover {
   background-color: gainsboro;
-  color: #eaeaea;
 }
 
 .active {
   background-color: #eaeaea;
 }
-
-/* TEST SLUT */
-
-/* nav {
-  background-color: #eaeaea;
-  box-shadow: #000 0px 4px 40px 1px;
-  position: relative;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  left: 270px;
-  gap: 200px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-ul li a {
-  font-size: 25px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #be1212;
-  cursor: pointer;
-  scroll-behavior: smooth;
-}
-
-ul li a:hover {
-  color: #0e0c0c;
-  transition: 300ms ease-in-out;
-} */
 
 .indkøbskurv {
   padding: 50px;
@@ -139,7 +106,7 @@ ul li a:hover {
   padding: 30px;
   display: none;
   width: auto;
-  background-color: #a5a5a5;
+  background-color: gainsboro;
 }
 
 #flip a {
