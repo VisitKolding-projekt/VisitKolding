@@ -9,6 +9,11 @@ body {
   font-family: "Roboto";
 }
 
+#page-wrap {
+  max-width: 1630px;
+  margin: 0 auto;
+}
+
 header {
   max-width: 1630px;
   position: relative;

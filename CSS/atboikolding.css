@@ -8,3 +8,8 @@ body {
   margin: auto;
   font-family: "Roboto";
 }
+
+#page-wrap {
+  max-width: 1630px;
+  margin: 0 auto;
+}

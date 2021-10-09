@@ -14,18 +14,12 @@ body {
   margin: auto auto;
 }
 
-.allsections {
-  max-width: 1630px;
-  margin: auto auto;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 header {
   padding-bottom: 50px;
-  z-index: 2;
 }
 
 header img {
@@ -47,7 +41,6 @@ h1 {
   transform: rotate(-30deg);
 }
 
-/* TEST START */
 .mobile-container {
   max-width: 1630px;
   color: white;
@@ -121,7 +114,6 @@ h1 {
   margin-top: 60px;
   display: flex;
   background-color: white;
-  z-index: 1;
 }
 
 .card {

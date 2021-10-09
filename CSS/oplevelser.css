@@ -4,11 +4,15 @@ body {
   font-family: "Roboto";
 }
 
+#page-wrap {
+  max-width: 1630px;
+  margin: 0 auto;
+}
+
 nav {
   background-color: #f2f2f2;
   font-weight: 400;
   position: relative;
-  z-index: 1;
 }
 
 .nav-container {
