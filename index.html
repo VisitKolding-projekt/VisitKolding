@@ -18,103 +18,52 @@
   </head>
   <body>
     <div id="page-wrap">
-      <!-- MATHIAS -->
       <!-- NAV ANNE -->
 
       <nav>
-        <div class="nav-container">
-          <a href="./index.html"
-            ><img src="./Billedmateriale/logo_33pix_hoj-01@2x.png"
-          /></a>
+        <div class="mobile-container">
+          <a class="active" href="/index.html">
+            <img
+              src="/Billedmateriale/logo_33pix_hoj-01@2x.png"
+              alt="Forside"
+            />
+          </a>
 
-          <ul class="a-ul">
-            <!-- OPLEVELSER DROPDOWN -->
+          <!-- BURGER-MENU -->
 
-            <li>
-              <div class="dropdown">
-                <a href="./Sider/Oplevelser.html">Oplevelser</a>
+          <div class="topnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <img class="list" src="/Billedmateriale/Listicon.png" />
+            </a>
 
-                <div class="dropdown-content">
-                  <a href="./Sider/Oplevelser.html#box2">Gågaden</a>
-                  <a href="./Sider/Oplevelser.html#box4">Havnen</a>
-                  <a href="./Sider/Oplevelser.html#box6">Events</a>
-                </div>
-              </div>
-            </li>
-
-            <!-- SEVÆRDIGHEDER DROPDOWM -->
-
-            <li>
-              <div class="dropdown">
-                <a href="./Sider/Seværdigheder.html">Seværdigheder</a>
-
-                <div class="dropdown-content">
-                  <a href="./Sider/Seværdigheder.html#box2"
-                    >Historiske bygninger</a
-                  >
-                  <a href="./Sider/Seværdigheder.html#box4">Geografisk have</a>
-                </div>
-              </div>
-            </li>
-
-            <!-- PLANLÆG DIN TUR DROPDOWN -->
-
-            <li>
-              <div class="dropdown">
-                <a href="./Sider/Planlaeg-din-tur.html">Planlæg din tur</a>
-
-                <div class="dropdown-content">
-                  <a href="./Sider/Planlaeg-din-tur.html">Trafik</a>
-                  <a href="./Sider/Planlaeg-din-tur.html">Overnatning</a>
-                  <a href="./Sider/Planlaeg-din-tur.html">Mad & Drikke</a>
-                </div>
-              </div>
-            </li>
-
-            <!-- AT BO I KOLDING DROPDOWN -->
-
-            <li>
-              <div class="dropdown">
-                <a href="./Sider/At bo i Kolding.html">At bo i Kolding</a>
-
-                <div class="dropdown-content">
-                  <a href="./Sider/Foreningsliv.html">Foreningsliv</a>
-                  <a href="./Sider/Natteliv.html">Natteliv</a>
-                  <a href="./Sider/Børneliv.html">Børneliv</a>
-                  <a href="./Sider/Kolding som designby.html"
-                    >Kolding som designby</a
-                  >
-                  <a href="./Sider/Hvad kan Danmark ellers byde på.html"
-                    >Hvad kan DK ellers byde på?</a
-                  >
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <a href="/Sider/Webshop.html"> Webshop </a>
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                onclick="toggleSearch()"
-                viewBox="0 0 25.42 25.425"
-              >
-                <path
-                  id="search-solid"
-                  d="M25.075,21.981l-4.95-4.95a1.191,1.191,0,0,0-.844-.348h-.809a10.323,10.323,0,1,0-1.788,1.788v.809a1.191,1.191,0,0,0,.348.844l4.95,4.95a1.187,1.187,0,0,0,1.683,0L25.07,23.67A1.2,1.2,0,0,0,25.075,21.981Zm-14.747-5.3a6.356,6.356,0,1,1,6.356-6.356A6.352,6.352,0,0,1,10.328,16.683Z"
+            <div id="myLinks">
+              <a href="/Sider/Oplevelser.html">Oplevelser</a>
+              <a href="/Sider/Seværdigheder.html">Seværdigheder</a>
+              <a href="/Sider/Planlaeg-din-tur.html">Planlæg din tur</a>
+              <a href="/Sider/At bo i Kolding.html">At bo i Kolding</a>
+              <a href="/Sider/Webshop.html">Webshop</a>
+              <a href="#søg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  onclick="toggleSearch()"
+                  viewBox="0 0 25.42 25.425"
+                >
+                  <path
+                    id="search-solid"
+                    d="M25.075,21.981l-4.95-4.95a1.191,1.191,0,0,0-.844-.348h-.809a10.323,10.323,0,1,0-1.788,1.788v.809a1.191,1.191,0,0,0,.348.844l4.95,4.95a1.187,1.187,0,0,0,1.683,0L25.07,23.67A1.2,1.2,0,0,0,25.075,21.981Zm-14.747-5.3a6.356,6.356,0,1,1,6.356-6.356A6.352,6.352,0,0,1,10.328,16.683Z"
+                  />
+                </svg>
+              </a>
+              <form id="search">
+                <input
+                  type="text"
+                  name="Søg"
+                  placeholder="Skriv det du søger efter.."
                 />
-              </svg>
-            </li>
-          </ul>
+              </form>
+            </div>
+          </div>
         </div>
-        <form id="search">
-          <input
-            type="text"
-            name="Søg"
-            placeholder="Skriv det du søger efter.."
-          />
-        </form>
       </nav>
 
       <!-- ANNE HEADER GRID -->
@@ -264,8 +213,6 @@
         </div>
       </section>
 
-      <!-- ALEX -->
-
       <!-- ZOZAN -->
       <div class="map">
         <div class="kolding map">
@@ -283,7 +230,6 @@
           ><br /><a href="https://www.embedgooglemap.net"></a>
         </div>
       </div>
-      <!-- ZOZAN -->
 
       <!-- PENILLE -->
       <section id="explore-kolding">
@@ -330,10 +276,11 @@
         </article>
       </section>
 
-      <!-- PERNILLE -->
       <!-- FOOTER ANNE -->
+
       <footer class="afooter">
         <!-- /* FOOTER - FØLG OS PÅ */ -->
+
         <section class="følgos">
           <h5 id="a1">Følg os på</h5>
 
@@ -421,6 +368,7 @@
         </section>
 
         <!-- FOOTER-STRIP ANNE -->
+
         <section class="footer-strip">
           <p>© 2021 VisitKolding All Rights Reserved.</p>
 
@@ -432,5 +380,18 @@
       </footer>
     </div>
     <script src="/js/script.js"></script>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
