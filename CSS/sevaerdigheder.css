@@ -20,11 +20,11 @@ nav {
   position: relative;
   z-index: 1;
 }
-
+/*
 .nav-container {
   margin-left: 5vw;
   margin-right: 5vw;
-}
+}*/
 
 nav img {
   width: 20vw;
@@ -95,7 +95,13 @@ nav img {
 /* SØGEFELT */
 
 input[type="text"] {
-  width: 140px;
+  width: 40%;
+  height: 50px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  text-align: center;
+  /* width: 140px;
   position: absolute;
   right: 1vw;
   top: 1vw;
@@ -110,7 +116,7 @@ input[type="text"] {
   background-size: 20px;
   background-repeat: no-repeat;
   padding: 5px 40px 5px 40px;
-  transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;*/
 }
 
 input[type="text"]:focus {
@@ -131,7 +137,7 @@ header {
 
 header h1 {
   background-color: white;
-  color: black;
+  color: #be1212;
   font-size: 45px;
   padding: 30px;
   position: relative;
@@ -212,4 +218,14 @@ header h1 {
 
 #box4 {
   grid-area: box4;
+}
+
+header {
+  background-image: url(/Billedmateriale/Historie.jpg);
+  background-size: cover !important;
+  min-height: 579px !important;
+  height: 100% !important;
+  background-repeat: no-repeat !important;
+  display: flex !important;
+  align-items: flex-end !important;
 }
