@@ -1,11 +1,12 @@
 nav {
-  background-color: #f2f2f2;
   font-weight: 400;
   position: relative;
   box-shadow: 0px 0px 20px 0px;
 }
-nav img {
-  width: 20vw;
+
+.nav-container {
+  background-color: #f2f2f2;
+  width: 100%;
 }
 
 .a-ul {
@@ -24,7 +25,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   color: black;
 }
 
@@ -100,4 +101,24 @@ nav svg {
   cursor: pointer;
   width: 1vw;
   height: 1vw;
+}
+
+/* MEDIAQUERIES */
+
+@media screen and (max-width: 700px) {
+  .a-ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .a-ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 35px;
+  }
 }
