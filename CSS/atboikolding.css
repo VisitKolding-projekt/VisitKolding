@@ -18,4 +18,7 @@ header {
   text-align: ;
 }
 h1 {
+#page-wrap {
+  max-width: 1630px;
+  margin: 0 auto;
 }

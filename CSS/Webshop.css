@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  font-family: "Roboto";
+}
+
+.webshop-container {
+  max-width: 1630px;
+  margin: auto auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  padding-bottom: 50px;
+}
+
+header img {
+  width: 45%;
+  padding: 20px;
+  position: relative;
+  margin-left: 25vw;
+}
+
+h1 {
+  color: #be1212;
+  font-size: 40px;
+  text-shadow: black 2px 2px 2px;
+  display: inline-block;
+  position: absolute;
+  top: 60px;
+  right: 200px;
+  width: 15%;
+  transform: rotate(-30deg);
+}
+
+.mobile-container {
+  max-width: 1630px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #eaeaea;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background-color: #eaeaea;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: gainsboro;
+}
+
+.active {
+  background-color: #eaeaea;
+}
+
+.indkøbskurv {
+  padding: 50px;
+  padding-bottom: 0;
+  max-width: 1630px;
+  z-index: 2;
+  justify-content: center;
+}
+
+#panel,
+#flip {
+  padding: 5px;
+  text-align: center;
+}
+
+#panel {
+  padding: 30px;
+  display: none;
+  width: auto;
+  background-color: gainsboro;
+}
+
+#flip a {
+  color: #be1212;
+}
+
+.shoppingcards-tshirts,
+.shoppingcards-billetter,
+.shoppingcards-souvenirs {
+  justify-content: center;
+  padding: 30px;
+  margin-top: 60px;
+  display: flex;
+  background-color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 60px;
+  text-align: center;
+  font-family: arial;
+  gap: 40px;
+  background-color: #eaeaea;
+  box-shadow: #000 10px 10px 10px;
+}
+
+.card img {
+  width: 50%;
+  padding: 20px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #be1212;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/CSS/nav.css" />
   </head>
   <body>
+    <div id="page-wrap">
     <nav>
       <a href="/index.html"
         ><img src="/Billedmateriale/logo_33pix_hoj-01@2x.png"
@@ -85,10 +86,32 @@
             </div>
           </div>
         </li>
-      </ul>
 
-      <form>
-        <input type="text" name="Søg" placeholder="Søg.." />
+        
+       <li>
+            <a href="/Sider/Webshop.html"> Webshop </a>
+          </li>
+          
+              <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              onclick="toggleSearch()"
+              viewBox="0 0 25.42 25.425"
+            >
+              <path
+                id="search-solid"
+                d="M25.075,21.981l-4.95-4.95a1.191,1.191,0,0,0-.844-.348h-.809a10.323,10.323,0,1,0-1.788,1.788v.809a1.191,1.191,0,0,0,.348.844l4.95,4.95a1.187,1.187,0,0,0,1.683,0L25.07,23.67A1.2,1.2,0,0,0,25.075,21.981Zm-14.747-5.3a6.356,6.356,0,1,1,6.356-6.356A6.352,6.352,0,0,1,10.328,16.683Z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <form id="search">
+        <input
+          type="text"
+          name="Søg"
+          placeholder="Skriv det du søger efter.."
+        />
       </form>
     </nav>
 
@@ -323,5 +346,6 @@
         </ul>
       </section>
     </footer>
+    </div>
   </body>
 </html>
