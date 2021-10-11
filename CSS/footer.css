@@ -54,15 +54,13 @@
 
 @media only screen and (max-width: 700px) {
   .følgos {
-    max-width: 1630px;
-    margin: auto;
+    justify-content: center;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "a1 a1" "a2 a3" "a4 a5";
-    background-color: #be1212;
-    gap: 20px;
+    gap: 0px;
   }
 }
 

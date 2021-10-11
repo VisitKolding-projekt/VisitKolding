@@ -1,17 +1,13 @@
 nav {
-  background-color: #f2f2f2;
   font-weight: 400;
   position: relative;
   box-shadow: 0px 0px 20px 0px;
 }
 
 .nav-container {
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-
-nav img {
-  width: 20vw;
+  background-color: #f2f2f2;
+  max-width: 1630px;
+  margin: auto auto;
 }
 
 .a-ul {
@@ -30,7 +26,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  font-size: 1vw;
+  font-size: 15px;
   color: black;
 }
 
@@ -52,7 +48,7 @@ nav img {
 .dropdown-content {
   display: none;
   position: absolute;
-  width: 18vw;
+  width: 300px;
   background-color: #474646;
   box-shadow: 0px 8px 16px 0px rgb(139, 139, 135);
   padding: 20px;
@@ -106,4 +102,24 @@ nav svg {
   cursor: pointer;
   width: 1vw;
   height: 1vw;
+}
+
+/* MEDIAQUERIES */
+
+@media screen and (max-width: 700px) {
+  .a-ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .a-ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 35px;
+  }
 }
