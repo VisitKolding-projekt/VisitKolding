@@ -15,338 +15,304 @@
     <link rel="stylesheet" href="/CSS/sevaerdigheder.css" />
     <link rel="stylesheet" href="/CSS/footer.css" />
     <link rel="stylesheet" href="/CSS/nav.css" />
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/main.css" />
   </head>
   <body>
     <div id="page-wrap">
-    <nav>
-      <a href="/index.html"
-        ><img src="/Billedmateriale/logo_33pix_hoj-01@2x.png"
-      /></a>
+      <!-- NAV ANNE -->
 
-      <ul class="a-ul">
-        <!-- OPLEVELSER DROPDOWN -->
+      <nav>
+        <div class="mobile-container">
+          <a class="active" href="/index.html">
+            <img
+              src="/Billedmateriale/logo_33pix_hoj-01@2x.png"
+              alt="Forside"
+            />
+          </a>
 
-        <li>
-          <div class="dropdown">
-            <a href="/Sider/Oplevelser.html">Oplevelser</a>
+          <!-- BURGER-MENU -->
 
-            <div class="dropdown-content">
-              <a href="/Sider/Gågaden.html">Gågaden</a>
-              <a href="/Sider/Havnen.html">Havnen</a>
-              <a href="/Sider/Events.html">Events</a>
+          <div class="topnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <img class="list" src="/Billedmateriale/Listicon.png" />
+            </a>
+
+            <div id="myLinks">
+              <a href="/Sider/Oplevelser.html">Oplevelser</a>
+              <a href="/Sider/Seværdigheder.html">Seværdigheder</a>
+              <a href="/Sider/Planlaeg-din-tur.html">Planlæg din tur</a>
+              <a href="/Sider/At bo i Kolding.html">At bo i Kolding</a>
+              <a href="/Sider/Webshop.html">Webshop</a>
+              <a href="#søg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  onclick="toggleSearch()"
+                  viewBox="0 0 25.42 25.425"
+                >
+                  <path
+                    id="search-solid"
+                    d="M25.075,21.981l-4.95-4.95a1.191,1.191,0,0,0-.844-.348h-.809a10.323,10.323,0,1,0-1.788,1.788v.809a1.191,1.191,0,0,0,.348.844l4.95,4.95a1.187,1.187,0,0,0,1.683,0L25.07,23.67A1.2,1.2,0,0,0,25.075,21.981Zm-14.747-5.3a6.356,6.356,0,1,1,6.356-6.356A6.352,6.352,0,0,1,10.328,16.683Z"
+                  />
+                </svg>
+              </a>
+              <form id="search">
+                <input
+                  type="text"
+                  name="Søg"
+                  placeholder="Skriv det du søger efter.."
+                />
+              </form>
             </div>
           </div>
-        </li>
+        </div>
+      </nav>
+      <header>
+        <h1>Seværdigheder</h1>
+      </header>
 
-        <!-- SEVÆRDIGHEDER DROPDOWM -->
-
-        <li>
-          <div class="dropdown">
-            <a href="/Sider/Saevrdigheder.html">Seværdigheder</a>
-
-            <div class="dropdown-content">
-              <a href="/Sider/Historiske bygninger.html"
-                >Historiske bygninger</a
-              >
-              <a href="/Sider/Geografisk have.html">Geografisk have</a>
-            </div>
-          </div>
-        </li>
-
-        <!-- PLANLÆG DIN TUR DROPDOWN -->
-
-        <li>
-          <div class="dropdown">
-            <a href="/Sider/Planlaeg-din-tur.html">Planlæg din tur</a>
-
-            <div class="dropdown-content">
-              <a href="/Sider/Trafik.html">Trafik</a>
-              <a href="/Sider/Overnatning.html">Overnatning</a>
-              <a href="/Sider/Mad & drikke.html">Mad & Drikke</a>
-            </div>
-          </div>
-        </li>
-
-        <!-- AT BO I KOLDING DROPDOWN -->
-
-        <li>
-          <div class="dropdown">
-            <a href="/Sider/At bo i Kolding.html">At bo i Kolding</a>
-
-            <div class="dropdown-content">
-              <a href="/Sider/Foreningsliv.html">Foreningsliv</a>
-              <a href="/Sider/Natteliv.html">Natteliv</a>
-              <a href="/Sider/Børneliv.html">Børneliv</a>
-              <a href="/Sider/Kolding som designby.html"
-                >Kolding som designby</a
-              >
-              <a href="/Sider/Hvad kan Danmark ellers byde på.html"
-                >Hvad kan DK ellers byde på?</a
-              >
-            </div>
-          </div>
-        </li>
-
-        
-       <li>
-            <a href="/Sider/Webshop.html"> Webshop </a>
-          </li>
-          
-              <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              onclick="toggleSearch()"
-              viewBox="0 0 25.42 25.425"
-            >
-              <path
-                id="search-solid"
-                d="M25.075,21.981l-4.95-4.95a1.191,1.191,0,0,0-.844-.348h-.809a10.323,10.323,0,1,0-1.788,1.788v.809a1.191,1.191,0,0,0,.348.844l4.95,4.95a1.187,1.187,0,0,0,1.683,0L25.07,23.67A1.2,1.2,0,0,0,25.075,21.981Zm-14.747-5.3a6.356,6.356,0,1,1,6.356-6.356A6.352,6.352,0,0,1,10.328,16.683Z"
-              />
-            </svg>
-          </li>
-        </ul>
-      <form id="search">
-        <input
-          type="text"
-          name="Søg"
-          placeholder="Skriv det du søger efter.."
-        />
-      </form>
-    </nav>
-
-    <header>
-      <h1>Seværdigheder</h1>
-    </header>
-
-    <section id="lead">
-      <article>
-        <p>
-          I Syddanmark findes masser af seværdigheder for folk i alle aldre.
-          <br />
-          Det er lige fra udforskning på Universe i Nordbord i det sydligste af
-          Danmark til det historiske Koldinghus i hjertet af Kolding, mens man
-          nyder den smukke slotssø.
-        </p>
-        <a
-          href="https://universe.dk/?gclid=CjwKCAjw0N3nBRBvEiwAHMwvNhdZrtJaMQl6bBK8bAGX6wtdBOdi6oqVFsryRmSv7KAf-0JkSIL9CxoCe50QAvD_BwE"
-          >Universe</a
-        >
-        <br />
-        <a href="http://www.trapholt.dk/">Trapholt Museum for Moderne Kunst</a>
-      </article>
-    </section>
-
-    <section id="grid">
-      <img
-        id="box1"
-        src="../Billedmateriale/Historiske bygninger/Christianskirken.jpg"
-      />
-
-      <article id="box2">
-        <h3>Historiske bygninger</h3>
-        <p>
-          Duis ultricies justo nisl, sit amet iaculis orci gravida eget.
-          Pellentesque lacinia faucibus urna id porttitor. Suspendisse
-          consectetur, odio a sollicitudin ultrices, ipsum quam convallis orci,
-          quis vehicula tortor ante et massa. Fusce ultrices eget odio et
-          ultricies. Pellentesque euismod, libero vitae accumsan fermentum, ex
-          nisl viverra ipsum, at faucibus felis magna quis tortor. Fusce
-          lobortis dolor id rhoncus congue. In ut purus diam. Nam scelerisque,
-          eros in hendrerit condimentum, sapien ligula tincidunt nulla, sed
-          volutpat mi massa in diam. Etiam erat sapien, porta sed ornare sit
-          amet, pulvinar vel neque. Nulla eu ipsum nec mauris vestibulum finibus
-          sed eu dolor. Nulla gravida sagittis eros, eget pretium tortor. Aenean
-          risus tortor, tincidunt scelerisque enim non, auctor lacinia odio.
-          Vivamus laoreet est eget pharetra varius.
-        </p>
-        <p>
-          Proin in gravida magna. equat mi. Orci varius natoque penatibus et
-          magnis dis parturient montes, nascetur ridiculus mus. Nunc sodales
-          rutrum mi vestibulum placerat. Vivamus tincidunt nibh ut justo
-          maximus, in auctor metus ultrices. Fusce pharetra arcu ac arcu
-          volutpat, non sagittis nulla elementum. Phasellus at purus ut justo
-          laoreet ultricies. Praesent feugiat nunc sed arcu fringilla faucibus.
-          Nunc eleifend dui lacus, sed sodales enim pulvinar ut. Sed at urna
-          accumsan, malesuada enim in, sodales quam. Morbi sed purus rutrum,
-          porttitor arcu eget, rhoncus nisl. Pellentesque quis blandit nulla.
-          Aliquam magna est, blandit viverra neque eu, sagittis hendrerit nunc.
-          Mauris gravida maximus lacus eget condimentum. Nullam imperdiet neque
-          in quam vehicula, eget pellentesque diam viverra. Aliquam et leo ac
-          felis euismod tincidunt. Morbi sodales, enim quis aliquam facilisis,
-          tortor metus aliquet leo, et gravida elit metus a nulla. Duis augue
-          neque, aliquet ac leo non, auctor fringilla erat. Morbi ut dui
-          hendrerit, rhoncus tortor a, ultricies lacus. In pretium justo lorem.
-        </p>
-        <p>
-          Proin sit amet iaculis ipsum. Maecenas varius nisi urna, non
-          vestibulum massa ultrices ut. In hac habitasse platea dictumst.
-          Vivamus nec odio fermentum dolor aliquam varius id ac quam.
-        </p>
-        <p>
-          Sed aliquam eros nec fringilla elementum. Orci varius natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Donec sit amet accumsan erat. Sed vulputate elit non purus ornare,
-          quis ultricies nisl vestibulum. Nulla fringilla tellus erat, eget
-          tincidunt est rhoncus at.
-        </p>
-      </article>
-
-      <img
-        id="box3"
-        src="../Billedmateriale/Historiske bygninger/danskm├©lle.jpg"
-      />
-
-      <article id="box4">
-        <h3>Geografisk have</h3>
-        <p>
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-          per inceptos himenaeos. In consequat iaculis quam sed eleifend. Duis
-          venenatis mi quis dolor euismod, vitae auctor enim ultricies. Cras
-          ante sem, laoreet non auctor eget, venenatis ut odio. Suspendisse
-          facilisis massa risus, blandit hendrerit mi ultricies a. Quisque
-          eleifend ut ex nec sagittis. Nullam ullamcorper consequat mauris quis
-          blandit. Donec nec augue at nisi vehicula vulputate dapibus et ante.
-          Curabitur tincidunt tortor ac ultrices vulputate. Curabitur consequat
-          sagittis metus quis accumsan. Vestibulum gravida consectetur
-          convallis. Duis ultricies justo nisl, sit amet iaculis orci gravida
-          eget. Pellentesque lacinia faucibus urna id porttitor. Suspendisse
-          consectetur, odio a sollicitudin ultrices, ipsum quam convallis orci,
-          quis vehicula tortor ante et massa. Fusce ultrices eget odio et
-          ultricies.
-        </p>
-        <p>
-          Pellentesque euismod, libero vitae accumsan fermentum, ex nisl viverra
-          ipsum, at faucibus felis magna quis tortor. Fusce lobortis dolor id
-          rhoncus congue. In ut purus diam. Nam scelerisque, eros in hendrerit
-          condimentum, sapien ligula tincidunt nulla, sed volutpat mi massa in
-          diam. Etiam erat sapien, porta sed ornare sit amet, pulvinar vel
-          neque. Nulla eu ipsum nec mauris vestibulum finibus sed eu dolor.
-          Nulla gravida sagittis eros, eget pretium tortor. Aenean risus tortor,
-          tincidunt scelerisque enim non, auctor lacinia odio. Vivamus laoreet
-          est eget pharetra varius. Proin in gravida magna. Lorem ipsum dolor
-          sit amet, consectetur adipiscing elit. Sed a lorem quam. In ac justo
-          maximus, rutrum metus sed, cons Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
-        <p>
-          Sed a lorem quam. In ac justo maximus, rutrum metus sed, consequat mi.
-          Orci varius natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Nunc sodales rutrum mi vestibulum placerat.
-          Vivamus tincidunt nibh ut justo maximus, in auctor metus ultrices.
-          Fusce pharetra arcu ac arcu volutpat, non sagittis nulla elementum.
-        </p>
-        <p>
-          Phasellus at purus ut justo laoreet ultricies. Praesent feugiat nunc
-          sed arcu fringilla faucibus. Nunc eleifend dui lacus, sed sodales enim
-          pulvinar ut. Sed at urna accumsan, malesuada enim in, sodales quam.
-          Morbi sed purus rutrum, porttitor arcu eget, rhoncus nisl.
-          Pellentesque quis blandit nulla. Aliquam magna est, blandit viverra
-          neque eu, sagittis hendrerit nunc. Mauris gravida maximus lacus eget
-          condimentum.
-        </p>
-      </article>
-    </section>
-
-    <!-- FOOTER ANNE -->
-    <footer class="afooter">
-      <!-- /* FOOTER - FØLG OS PÅ */ -->
-      <section class="følgos">
-        <h5 id="a1">Følg os på</h5>
-
-        <picture id="a2">
-          <img src="/Billedmateriale/instagram-brands.png" />
-        </picture>
-        <picture id="a3">
-          <img src="/Billedmateriale/twitter-brands.png" />
-        </picture>
-        <picture id="a4">
-          <img src="/Billedmateriale/youtube-brands.png" />
-        </picture>
-        <picture id="a5">
-          <img src="/Billedmateriale/facebook-brands.png" />
-        </picture>
-      </section>
-      <!-- /* FOOTER - NYTTIGE LINKS */ -->
-
-      <section class="middle-footer">
-        <div id="c1">
-          <h4>VisitKolding</h4>
-
+      <section id="lead">
+        <article>
           <p>
-            Lorem ipsum dolor sit amet, consectetur<br />
-            adipiscing elit, sed do eiusmod tempor<br />
-            incididunt ut labore et dolore magna aliqua.
+            I Syddanmark findes masser af seværdigheder for folk i alle aldre.
+            <br />
+            Det er lige fra udforskning på Universe i Nordbord i det sydligste
+            af Danmark til det historiske Koldinghus i hjertet af Kolding, mens
+            man nyder den smukke slotssø.
           </p>
-        </div>
-
-        <div id="c2">
-          <ul>
-            <li>
-              <h5>Nyttige links</h5>
-            </li>
-            <li>
-              <a href="#">Link 1</a>
-            </li>
-            <li>
-              <a href="#">Link 2</a>
-            </li>
-            <li>
-              <a href="#">Link 3</a>
-            </li>
-            <li>
-              <a href="#">Link 4</a>
-            </li>
-          </ul>
-
-          <ul>
-            <li><h5>Nyttige links</h5></li>
-
-            <li>
-              <a href="#">Link 1</a>
-            </li>
-            <li>
-              <a href="#">Link 2</a>
-            </li>
-            <li>
-              <a href="#">Link 3</a>
-            </li>
-            <li>
-              <a href="#">Link 4</a>
-            </li>
-          </ul>
-
-          <ul>
-            <li>
-              <h5>Nyttige links</h5>
-            </li>
-            <li>
-              <a href="#">Link 1</a>
-            </li>
-            <li>
-              <a href="#">Link 2</a>
-            </li>
-            <li>
-              <a href="#">Link 3</a>
-            </li>
-            <li>
-              <a href="#">Link 4</a>
-            </li>
-          </ul>
-        </div>
+          <a
+            href="https://universe.dk/?gclid=CjwKCAjw0N3nBRBvEiwAHMwvNhdZrtJaMQl6bBK8bAGX6wtdBOdi6oqVFsryRmSv7KAf-0JkSIL9CxoCe50QAvD_BwE"
+            >Universe</a
+          >
+          <br />
+          <a href="http://www.trapholt.dk/"
+            >Trapholt Museum for Moderne Kunst</a
+          >
+        </article>
       </section>
 
-      <!-- FOOTER-STRIP ANNE -->
-      <section class="footer-strip">
-        <p>© 2021 VisitKolding All Rights Reserved.</p>
+      <section id="grid">
+        <img
+          id="box1"
+          src="../Billedmateriale/Historiske bygninger/Christianskirken.jpg"
+        />
 
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-        </ul>
+        <article id="box2">
+          <h3>Historiske bygninger</h3>
+          <p>
+            Duis ultricies justo nisl, sit amet iaculis orci gravida eget.
+            Pellentesque lacinia faucibus urna id porttitor. Suspendisse
+            consectetur, odio a sollicitudin ultrices, ipsum quam convallis
+            orci, quis vehicula tortor ante et massa. Fusce ultrices eget odio
+            et ultricies. Pellentesque euismod, libero vitae accumsan fermentum,
+            ex nisl viverra ipsum, at faucibus felis magna quis tortor. Fusce
+            lobortis dolor id rhoncus congue. In ut purus diam. Nam scelerisque,
+            eros in hendrerit condimentum, sapien ligula tincidunt nulla, sed
+            volutpat mi massa in diam. Etiam erat sapien, porta sed ornare sit
+            amet, pulvinar vel neque. Nulla eu ipsum nec mauris vestibulum
+            finibus sed eu dolor. Nulla gravida sagittis eros, eget pretium
+            tortor. Aenean risus tortor, tincidunt scelerisque enim non, auctor
+            lacinia odio. Vivamus laoreet est eget pharetra varius.
+          </p>
+          <p>
+            Proin in gravida magna. equat mi. Orci varius natoque penatibus et
+            magnis dis parturient montes, nascetur ridiculus mus. Nunc sodales
+            rutrum mi vestibulum placerat. Vivamus tincidunt nibh ut justo
+            maximus, in auctor metus ultrices. Fusce pharetra arcu ac arcu
+            volutpat, non sagittis nulla elementum. Phasellus at purus ut justo
+            laoreet ultricies. Praesent feugiat nunc sed arcu fringilla
+            faucibus. Nunc eleifend dui lacus, sed sodales enim pulvinar ut. Sed
+            at urna accumsan, malesuada enim in, sodales quam. Morbi sed purus
+            rutrum, porttitor arcu eget, rhoncus nisl. Pellentesque quis blandit
+            nulla. Aliquam magna est, blandit viverra neque eu, sagittis
+            hendrerit nunc. Mauris gravida maximus lacus eget condimentum.
+            Nullam imperdiet neque in quam vehicula, eget pellentesque diam
+            viverra. Aliquam et leo ac felis euismod tincidunt. Morbi sodales,
+            enim quis aliquam facilisis, tortor metus aliquet leo, et gravida
+            elit metus a nulla. Duis augue neque, aliquet ac leo non, auctor
+            fringilla erat. Morbi ut dui hendrerit, rhoncus tortor a, ultricies
+            lacus. In pretium justo lorem.
+          </p>
+          <p>
+            Proin sit amet iaculis ipsum. Maecenas varius nisi urna, non
+            vestibulum massa ultrices ut. In hac habitasse platea dictumst.
+            Vivamus nec odio fermentum dolor aliquam varius id ac quam.
+          </p>
+          <p>
+            Sed aliquam eros nec fringilla elementum. Orci varius natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec sit amet accumsan erat. Sed vulputate elit non purus ornare,
+            quis ultricies nisl vestibulum. Nulla fringilla tellus erat, eget
+            tincidunt est rhoncus at.
+          </p>
+        </article>
+
+        <img
+          id="box3"
+          src="../Billedmateriale/Historiske bygninger/danskm├©lle.jpg"
+        />
+
+        <article id="box4">
+          <h3>Geografisk have</h3>
+          <p>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            per inceptos himenaeos. In consequat iaculis quam sed eleifend. Duis
+            venenatis mi quis dolor euismod, vitae auctor enim ultricies. Cras
+            ante sem, laoreet non auctor eget, venenatis ut odio. Suspendisse
+            facilisis massa risus, blandit hendrerit mi ultricies a. Quisque
+            eleifend ut ex nec sagittis. Nullam ullamcorper consequat mauris
+            quis blandit. Donec nec augue at nisi vehicula vulputate dapibus et
+            ante. Curabitur tincidunt tortor ac ultrices vulputate. Curabitur
+            consequat sagittis metus quis accumsan. Vestibulum gravida
+            consectetur convallis. Duis ultricies justo nisl, sit amet iaculis
+            orci gravida eget. Pellentesque lacinia faucibus urna id porttitor.
+            Suspendisse consectetur, odio a sollicitudin ultrices, ipsum quam
+            convallis orci, quis vehicula tortor ante et massa. Fusce ultrices
+            eget odio et ultricies.
+          </p>
+          <p>
+            Pellentesque euismod, libero vitae accumsan fermentum, ex nisl
+            viverra ipsum, at faucibus felis magna quis tortor. Fusce lobortis
+            dolor id rhoncus congue. In ut purus diam. Nam scelerisque, eros in
+            hendrerit condimentum, sapien ligula tincidunt nulla, sed volutpat
+            mi massa in diam. Etiam erat sapien, porta sed ornare sit amet,
+            pulvinar vel neque. Nulla eu ipsum nec mauris vestibulum finibus sed
+            eu dolor. Nulla gravida sagittis eros, eget pretium tortor. Aenean
+            risus tortor, tincidunt scelerisque enim non, auctor lacinia odio.
+            Vivamus laoreet est eget pharetra varius. Proin in gravida magna.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem
+            quam. In ac justo maximus, rutrum metus sed, cons Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit.
+          </p>
+          <p>
+            Sed a lorem quam. In ac justo maximus, rutrum metus sed, consequat
+            mi. Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Nunc sodales rutrum mi vestibulum placerat.
+            Vivamus tincidunt nibh ut justo maximus, in auctor metus ultrices.
+            Fusce pharetra arcu ac arcu volutpat, non sagittis nulla elementum.
+          </p>
+          <p>
+            Phasellus at purus ut justo laoreet ultricies. Praesent feugiat nunc
+            sed arcu fringilla faucibus. Nunc eleifend dui lacus, sed sodales
+            enim pulvinar ut. Sed at urna accumsan, malesuada enim in, sodales
+            quam. Morbi sed purus rutrum, porttitor arcu eget, rhoncus nisl.
+            Pellentesque quis blandit nulla. Aliquam magna est, blandit viverra
+            neque eu, sagittis hendrerit nunc. Mauris gravida maximus lacus eget
+            condimentum.
+          </p>
+        </article>
       </section>
-    </footer>
+
+      <!-- FOOTER ANNE -->
+      <footer class="afooter">
+        <!-- /* FOOTER - FØLG OS PÅ */ -->
+        <section class="følgos">
+          <h5 id="a1">Følg os på</h5>
+
+          <picture id="a2">
+            <img src="/Billedmateriale/instagram-brands.png" />
+          </picture>
+          <picture id="a3">
+            <img src="/Billedmateriale/twitter-brands.png" />
+          </picture>
+          <picture id="a4">
+            <img src="/Billedmateriale/youtube-brands.png" />
+          </picture>
+          <picture id="a5">
+            <img src="/Billedmateriale/facebook-brands.png" />
+          </picture>
+        </section>
+        <!-- /* FOOTER - NYTTIGE LINKS */ -->
+
+        <section class="middle-footer">
+          <div id="c1">
+            <h4>VisitKolding</h4>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur<br />
+              adipiscing elit, sed do eiusmod tempor<br />
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <div id="c2">
+            <ul>
+              <li>
+                <h5>Nyttige links</h5>
+              </li>
+              <li>
+                <a href="#">Link 1</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
+              <li>
+                <a href="#">Link 3</a>
+              </li>
+              <li>
+                <a href="#">Link 4</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li><h5>Nyttige links</h5></li>
+
+              <li>
+                <a href="#">Link 1</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
+              <li>
+                <a href="#">Link 3</a>
+              </li>
+              <li>
+                <a href="#">Link 4</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <h5>Nyttige links</h5>
+              </li>
+              <li>
+                <a href="#">Link 1</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
+              <li>
+                <a href="#">Link 3</a>
+              </li>
+              <li>
+                <a href="#">Link 4</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- FOOTER-STRIP ANNE -->
+        <section class="footer-strip">
+          <p>© 2021 VisitKolding All Rights Reserved.</p>
+
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </section>
+      </footer>
     </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
     <script src="/js/script.js"></script>
   </body>
 </html>
