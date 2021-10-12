@@ -12,7 +12,7 @@ body {
 
 #page-wrap {
   max-width: 1630px;
-  margin: 0 auto;
+  margin: auto auto;
 }
 
 /* HEADER GRID */
@@ -355,46 +355,14 @@ header {
       "begiv7 begiv8"
       "begiv9 begiv9";
     padding-left: 40px;
-    padding-right: 0;
   }
   .begivenheder-container img {
     position: relative;
     bottom: 130px;
-    width: 30%;
+    width: 25%;
   }
 
   #kommende-begivenheder h2 {
     padding-left: 30px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .begivenheder-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "begiv1 begiv2"
-      "begiv3 begiv3"
-      "begiv4 begiv5"
-      "begiv6 begiv6"
-      "begiv7 begiv8"
-      "begiv9 begiv9";
-    padding-left: 40px;
-    padding-right: 0;
-    padding-bottom: 0;
-  }
-  .begivenheder-container img {
-    width: 25%;
-    bottom: 80px;
-    padding-right: 20px;
-  }
-
-  #kommende-begivenheder h2 {
-    padding-left: 40px;
-  }
-
-  .begivenheder-container p {
-    position: relative;
-    right: 140px;
-    top: 40px;
   }
 }

@@ -12,84 +12,32 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="/CSS/atboikolding.css" />
     <link rel="stylesheet" href="/CSS/nav.css" />
     <link rel="stylesheet" href="/CSS/footer.css" />
   </head>
   <body>
     <div id="page-wrap"></div>
-    <nav>
-      <a href="/index.html"
-        ><img src="/Billedmateriale/logo_33pix_hoj-01@2x.png"
-      /></a>
+     <!-- NAV ANNE -->
 
-      <ul class="a-ul">
-        <!-- OPLEVELSER DROPDOWN -->
+     <nav>
+        <!-- BURGER-MENU -->
 
-        <li>
-          <div class="dropdown">
-            <a href="/Sider/Oplevelser.html">Oplevelser</a>
+        <div class="topnav" id="myTopnav">
+          <a href="/index.html" class="active">
+            <img src="/Billedmateriale/logo_33pix_hoj-01@2x.png" />
+          </a>
+          <a href="/Sider/Oplevelser.html">Oplevelser</a>
+          <a href="/Sider/Sevaerdigheder.html">Seværdigheder</a>
+          <a href="/Sider/Planlaeg-din-tur.html">Planlæg din tur</a>
+          <a href="/Sider/At-bo-i-Kolding.html">At bo i Kolding</a>
+          <a href="/Sider/Webshop.html">Webshop</a>
 
-            <div class="dropdown-content">
-              <a href="/Sider/Gågaden.html">Gågaden</a>
-              <a href="/Sider/Havnen.html">Havnen</a>
-              <a href="/Sider/Events.html">Events</a>
-            </div>
-          </div>
-        </li>
-
-        <!-- SEVÆRDIGHEDER DROPDOWM -->
-
-        <li>
-          <div class="dropdown">
-            <a href="/Sider/Seværdigheder.html">Seværdigheder</a>
-
-            <div class="dropdown-content">
-              <a href="/Sider/Historiske bygninger.html"
-                >Historiske bygninger</a
-              >
-              <a href="/Sider/Geografisk have.html">Geografisk have</a>
-            </div>
-          </div>
-        </li>
-
-        <!-- PLANLÆG DIN TUR DROPDOWN -->
-
-        <li>
-          <div class="dropdown">
-            <a href="/Sider/Planlæg din tur.html">Planlæg din tur</a>
-
-            <div class="dropdown-content">
-              <a href="/Sider/Trafik.html">Trafik</a>
-              <a href="/Sider/Overnatning.html">Overnatning</a>
-              <a href="/Sider/Mad & drikke.html">Mad & Drikke</a>
-            </div>
-          </div>
-        </li>
-
-        <!-- AT BO I KOLDING DROPDOWN -->
-
-        <li>
-          <div class="dropdown">
-            <a href="/Sider/At bo i Kolding.html">At bo i Kolding</a>
-
-            <div class="dropdown-content">
-              <a href="/Sider/Foreningsliv.html">Foreningsliv</a>
-              <a href="/Sider/Natteliv.html">Natteliv</a>
-              <a href="/Sider/Børneliv.html">Børneliv</a>
-              <a href="/Sider/Kolding som designby.html"
-                >Kolding som designby</a
-              >
-              <a href="/Sider/Hvad kan Danmark ellers byde på.html"
-                >Hvad kan DK ellers byde på?</a
-              >
-            </div>
-          </div>
-        </li>
-      <li>
-            <a href="/Sider/Webshop.html"> Webshop </a>
-          </li>
-          <li>
+          <a href="#søg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               onclick="toggleSearch()"
@@ -100,27 +48,26 @@
                 d="M25.075,21.981l-4.95-4.95a1.191,1.191,0,0,0-.844-.348h-.809a10.323,10.323,0,1,0-1.788,1.788v.809a1.191,1.191,0,0,0,.348.844l4.95,4.95a1.187,1.187,0,0,0,1.683,0L25.07,23.67A1.2,1.2,0,0,0,25.075,21.981Zm-14.747-5.3a6.356,6.356,0,1,1,6.356-6.356A6.352,6.352,0,0,1,10.328,16.683Z"
               />
             </svg>
-          </li>
-        </ul>
-      </div>
-      <form id="search">
-        <input
-          type="text"
-          name="Søg"
-          placeholder="Skriv det du søger efter.."
-        />
-      </form>
-
-      <form>
-        <input type="text" name="Søg" placeholder="Søg.." />
-      </form>
-    </nav>
-    <!-- MATHIAS MAIN -->
+          </a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            ><i class="fa fa-bars"></i
+          ></a>
+          <form id="search">
+            <input
+              type="text"
+              name="Søg"
+              placeholder="Skriv det du søger efter.."
+            />
+          </form>
+        </div>
+      </nav>
+       <!-- MATHIAS MAIN -->
     <header><h1>At bo i Kolding</h1></header>
     <section id="under-header">
       <p>Kolding er en mellemstor by, som har meget at byde på. Uanset om du vil bosætte dig i midt i byens summen, eller om du gerne vil ud til åbne vidder, så har Kolding hvad du har brug for. Indkøbsmuligheder, fritidsaktiviteter, instutioner, skoler og videre uddannelse. Ses vi?</p>
     </section>
 
+    
     <!-- FOOTER ANNE -->
     <footer class="afooter">
       <!-- /* FOOTER - FØLG OS PÅ */ -->
@@ -221,5 +168,20 @@
       </section>
     </footer>
     </div>
+
+  <!-- JAVASCRIPT -->
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>
