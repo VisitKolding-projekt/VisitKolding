@@ -4,21 +4,22 @@
 }
 
 body {
-  max-width: 1630px;
-  margin: auto;
   font-family: "Roboto";
 }
-
-header {
-  background-image: url(https://picsum.photos/seed/picsum/1600/500);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  height: 300px;
-  text-align: ;
-}
-h1 {
 #page-wrap {
   max-width: 1630px;
   margin: 0 auto;
 }
+
+header {
+  background-image: url(https://picsum.photos/seed/picuum/1600/500);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 300px;
+}
+h1 {
+  padding: 250px;
+
+}
+
