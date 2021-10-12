@@ -14,115 +14,6 @@ body {
   margin: 0 auto;
 }
 
-nav {
-  background-color: #f2f2f2;
-  font-weight: 400;
-  position: relative;
-  z-index: 1;
-}
-/*
-.nav-container {
-  margin-left: 5vw;
-  margin-right: 5vw;
-}*/
-
-nav img {
-  width: 20vw;
-}
-
-.a-ul {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  position: absolute;
-  top: 1.4vw;
-  right: 15vw;
-  gap: 3vw;
-}
-
-nav ul li {
-  text-align: end;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-size: 1vw;
-  color: black;
-}
-
-nav ul li a:hover {
-  transition: 300ms ease-in-out;
-}
-
-nav img {
-  width: 20vw;
-}
-
-/* DROPDOWN */
-
-.dropdown {
-  position: relative;
-  display: block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  width: 18vw;
-  background-color: #474646;
-  box-shadow: 0px 8px 16px 0px rgb(139, 139, 135);
-  padding: 20px;
-  border-radius: 15px;
-  line-height: 30px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  text-decoration: none;
-  color: rgb(250, 244, 244);
-  display: block;
-  text-align: left;
-  transition: 300ms ease-in-out;
-}
-
-.dropdown a:hover {
-  color: rgb(141, 13, 13);
-}
-
-/* SØGEFELT */
-
-input[type="text"] {
-  width: 40%;
-  height: 50px;
-  background-color: white;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  text-align: center;
-  /* width: 140px;
-  position: absolute;
-  right: 1vw;
-  top: 1vw;
-  margin-right: 5vw;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url(./Billedmateriale/Search.png);
-  background-position: 5px 5px;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  padding: 5px 40px 5px 40px;
-  transition: 0.4s ease-in-out;*/
-}
-
-input[type="text"]:focus {
-  width: 15%;
-}
-
 /* MAIN / Penille*/
 
 header {
@@ -138,7 +29,7 @@ header {
 header h1 {
   background-color: white;
   color: #be1212;
-  font-size: 45px;
+  font-size: 50px;
   padding: 30px;
   position: relative;
   margin-left: 100px;
@@ -180,7 +71,7 @@ header h1 {
   height: 100%;
   font-family: "Roboto";
   font-weight: 300;
-  font-size: 1.08vw;
+  font-size: 16px;
   color: black;
   background-color: #eaeaea;
   grid-template-columns: 1fr 1fr;
