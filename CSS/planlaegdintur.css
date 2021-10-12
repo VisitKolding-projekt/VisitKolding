@@ -17,11 +17,12 @@ body {
 header {
   max-width: 1630px;
   position: relative;
+  min-height: 579px;
+  height: 100%;
 }
 
 header img {
   width: 100%;
-  height: 300px;
   opacity: 50%;
 }
 
@@ -41,19 +42,36 @@ header img {
   background-color: white;
   position: relative;
   top: -100px;
-  left: 60px;
+  left: 90px;
 }
 
-.bg-section .p-container {
+.p-container {
   padding: 0 0 60px 0;
   display: flex;
   justify-content: center;
-  margin: 0 60px;
 }
 
-.bg-section .p-container p {
+.p-container p {
   color: #313131;
   line-height: 30px;
+}
+
+/* LESS THAN 700px; */
+@media only screen and (max-width: 700px) {
+  .h3-container {
+    width: 680px;
+    height: auto;
+    background-color: brown;
+    position: relative;
+    top: -100px;
+    left: 90px;
+  }
+
+  .bg-section .p-container {
+    margin: 0;
+    justify-content: center;
+    background-color: brown;
+  }
 }
 
 /* ARTIKLER */
