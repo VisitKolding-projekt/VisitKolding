@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="/CSS/nav.css" />
     <link rel="stylesheet" href="/CSS/footer.css" />
     <link rel="stylesheet" href="/main.css" />
@@ -21,48 +25,40 @@
       <!-- NAV ANNE -->
 
       <nav>
-        <div class="mobile-container">
-          <a class="active" href="/index.html">
-            <img
-              src="/Billedmateriale/logo_33pix_hoj-01@2x.png"
-              alt="Forside"
-            />
+        <!-- BURGER-MENU -->
+
+        <div class="topnav" id="myTopnav">
+          <a href="/index.html" class="active">
+            <img src="/Billedmateriale/logo_33pix_hoj-01@2x.png" />
           </a>
+          <a href="/Sider/Oplevelser.html">Oplevelser</a>
+          <a href="/Sider/Sevaerdigheder.html">Seværdigheder</a>
+          <a href="/Sider/Planlaeg-din-tur.html">Planlæg din tur</a>
+          <a href="/Sider/At bo i Kolding.html">At bo i Kolding</a>
+          <a href="/Sider/Webshop.html">Webshop</a>
 
-          <!-- BURGER-MENU -->
-
-          <div class="topnav">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <img class="list" src="/Billedmateriale/Listicon.png" />
-            </a>
-
-            <div id="myLinks">
-              <a href="/Sider/Oplevelser.html">Oplevelser</a>
-              <a href="/Sider/Seværdigheder.html">Seværdigheder</a>
-              <a href="/Sider/Planlaeg-din-tur.html">Planlæg din tur</a>
-              <a href="/Sider/At bo i Kolding.html">At bo i Kolding</a>
-              <a href="/Sider/Webshop.html">Webshop</a>
-              <a href="#søg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  onclick="toggleSearch()"
-                  viewBox="0 0 25.42 25.425"
-                >
-                  <path
-                    id="search-solid"
-                    d="M25.075,21.981l-4.95-4.95a1.191,1.191,0,0,0-.844-.348h-.809a10.323,10.323,0,1,0-1.788,1.788v.809a1.191,1.191,0,0,0,.348.844l4.95,4.95a1.187,1.187,0,0,0,1.683,0L25.07,23.67A1.2,1.2,0,0,0,25.075,21.981Zm-14.747-5.3a6.356,6.356,0,1,1,6.356-6.356A6.352,6.352,0,0,1,10.328,16.683Z"
-                  />
-                </svg>
-              </a>
-              <form id="search">
-                <input
-                  type="text"
-                  name="Søg"
-                  placeholder="Skriv det du søger efter.."
-                />
-              </form>
-            </div>
-          </div>
+          <a href="#søg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              onclick="toggleSearch()"
+              viewBox="0 0 25.42 25.425"
+            >
+              <path
+                id="search-solid"
+                d="M25.075,21.981l-4.95-4.95a1.191,1.191,0,0,0-.844-.348h-.809a10.323,10.323,0,1,0-1.788,1.788v.809a1.191,1.191,0,0,0,.348.844l4.95,4.95a1.187,1.187,0,0,0,1.683,0L25.07,23.67A1.2,1.2,0,0,0,25.075,21.981Zm-14.747-5.3a6.356,6.356,0,1,1,6.356-6.356A6.352,6.352,0,0,1,10.328,16.683Z"
+              />
+            </svg>
+          </a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            ><i class="fa fa-bars"></i
+          ></a>
+          <form id="search">
+            <input
+              type="text"
+              name="Søg"
+              placeholder="Skriv det du søger efter.."
+            />
+          </form>
         </div>
       </nav>
 
@@ -384,11 +380,11 @@
 
     <script>
       function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
         } else {
-          x.style.display = "block";
+          x.className = "topnav";
         }
       }
     </script>
