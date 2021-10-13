@@ -57,70 +57,70 @@ header {
 
 #b1 {
   grid-area: b1;
-  background-image: url(/Billedmateriale/torv.jpg);
+  background-image: url(../Billedmateriale/torv.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #b2 {
   grid-area: b2;
-  background-image: url(/Billedmateriale/havn_tr├ªskib.jpg);
+  background-image: url(../Billedmateriale/havn_tr├ªskib.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #b3 {
   grid-area: b3;
-  background-image: url(/Billedmateriale/kunst2.jpg);
+  background-image: url(../Billedmateriale/kunst2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #b4 {
   grid-area: b4;
-  background-image: url(/Billedmateriale/banega╠èrd.jpg);
+  background-image: url(../Billedmateriale/banega╠èrd.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #b5 {
   grid-area: b5;
-  background-image: url(/Billedmateriale/bibliotek.jpg);
+  background-image: url(../Billedmateriale/bibliotek.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #b6 {
   grid-area: b6;
-  background-image: url(/Billedmateriale/cafe2.jpg);
+  background-image: url(../Billedmateriale/cafe2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #b7 {
   grid-area: b7;
-  background-image: url(/Billedmateriale/designskolen2.jpg);
+  background-image: url(../Billedmateriale/designskolen2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #b8 {
   grid-area: b8;
-  background-image: url(/Billedmateriale/natteliv_livemusik.jpg);
+  background-image: url(../Billedmateriale/natteliv_livemusik.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #b9 {
   grid-area: b9;
-  background-image: url(/Billedmateriale/banega╠èrd.jpg);
+  background-image: url(../Billedmateriale/banega╠èrd.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #b10 {
   grid-area: b10;
-  background-image: url(/Billedmateriale/lystba╠èdhavn2.jpg);
+  background-image: url(../Billedmateriale/lystba╠èdhavn2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
