@@ -82,8 +82,8 @@ nav svg {
     padding: 0;
   }
 
-  nav img {
-    width: 250px;
+  .topnav img {
+    width: 350px;
   }
 
   .topnav.responsive {
