@@ -235,14 +235,27 @@ header {
 }
 
 /* Zozan */
+
 .map {
   position: relative;
   text-align: right;
-  height: 600px;
+  height: 0;
   max-width: 1630px;
   overflow: hidden;
   background: none !important;
+  padding-bottom: 56.25%;
 }
+
+.map iframe{
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* Zozan */
+
 
 /* ALEX */
 
