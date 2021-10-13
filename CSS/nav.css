@@ -33,57 +33,9 @@ nav {
   color: black;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
-
-/* .mobile-container {
-  max-width: 1630px;
-  background-color: #eaeaea;
-  position: relative;
-}
-
-nav img {
-  width: 450px;
-}
-
-.list {
-  width: 60px;
-}
-
-.topnav {
-  background-color: #eaeaea;
-}
-
-.topnav #myLinks {
-  display: none;
-}
-
-.topnav a {
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  text-align: center;
-}
-
-.topnav a.icon {
-  background-color: #eaeaea;
-  display: block;
-  position: absolute;
-  right: 50px;
-  top: -4px;
-}
-
-.topnav a:hover {
-  background-color: gainsboro;
-}
-
-.active {
-  background-color: #eaeaea;
-} */
 
 /* SØGEFELT */
 
