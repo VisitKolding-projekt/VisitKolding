@@ -9,7 +9,8 @@ body {
   margin: 0 auto;
 }
 
-/* Header */
+/* Zozan */
+
 header {
   background-image: url(/Billedmateriale/indk├©bscenter.jpg);
   background-size: cover;
@@ -48,8 +49,6 @@ header {
   text-align: center;
   text-align: justify;
 }
-
-/* Gågaden - Havnen - events */
 
 #grid {
   margin: 60px;
@@ -111,3 +110,24 @@ header {
 #box6 {
   grid-area: box6;
 }
+
+@media screen and (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) minmax(50px, 1fr) minmax(150px, 1fr);
+    grid-template-areas:
+     "nav"
+     "header"
+     "box1 box2"
+     "box3 box4"
+     "box5 box6"
+     "footer";
+   
+  }
+
+  @media screen and (max-width: 700px) {
+    #grid {
+      font-size: 15px;
+    }
+
+/* Zozan */
