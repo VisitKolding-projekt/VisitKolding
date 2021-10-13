@@ -12,7 +12,7 @@ body {
 /* Zozan */
 
 header {
-  background-image: url(/Billedmateriale/indk├©bscenter.jpg);
+  background-image: url(../Billedmateriale/indk├©bscenter.jpg);
   background-size: cover;
   min-height: 579px;
   height: 100%;

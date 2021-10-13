@@ -133,7 +133,7 @@ header h1 {
 }
 
 header {
-  background-image: url(/Billedmateriale/Historie.jpg);
+  background-image: url(../Billedmateriale/Historie.jpg);
   background-size: cover !important;
   min-height: 579px !important;
   height: 100% !important;
