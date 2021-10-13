@@ -358,23 +358,35 @@ header {
 
 @media screen and (max-width: 700px) {
   .begivenheder-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "begiv1 begiv2"
-      "begiv3 begiv3"
-      "begiv4 begiv5"
-      "begiv6 begiv6"
-      "begiv7 begiv8"
-      "begiv9 begiv9";
-    padding-left: 40px;
-  }
-  .begivenheder-container img {
     position: relative;
-    bottom: 130px;
-    width: 25%;
+    display: grid;
+    background-color: #eaeaea;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+    gap: 10px;
+    grid-template-areas:
+      "begiv1 begiv2 begiv9"
+      "none begiv2 begiv2"
+      "begiv4 begiv6 begiv3"
+      "none begiv6 begiv6"
+      "begiv7 begiv8 begiv5"
+      "begiv3 begiv3 begiv3";
   }
 
-  #kommende-begivenheder h2 {
-    padding-left: 30px;
+  .begivenheder-container img {
+    position: relative;
+    bottom: 10px;
+    width: 200px;
+    max-height: 216px;
+    object-fit: cover;
+    padding: 30px;
+  }
+
+  .begivenheder-container p {
+    position: absolute;
+    right: 80px;
+    padding: 0 100px;
+    font-size: 10px;
   }
 }
