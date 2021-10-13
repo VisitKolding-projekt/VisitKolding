@@ -190,16 +190,16 @@
     grid-template-columns: auto auto;
     position: absolute;
     gap: 20px;
-    right: 10px;
+    right: 0;
   }
   .footer-strip p {
     position: absolute;
-    left: 10px;
+    left: 0;
     top: 13px;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .footer-strip li a {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
