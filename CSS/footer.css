@@ -26,6 +26,10 @@
 
 #a1 {
   grid-area: a1;
+  font-size: 30px;
+  color: white;
+  font-size: 60px;
+  padding-right: 60px;
 }
 
 #a2 {
@@ -44,28 +48,31 @@
   grid-area: a5;
 }
 
-#a1 {
-  font-size: 30px;
-  color: white;
-  font-size: 60px;
-  padding-right: 60px;
-}
-
 @media only screen and (max-width: 700px) {
   .folgos {
-    justify-content: center;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "a1 a1" "a2 a3" "a4 a5";
-    gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "a1 a1"
+      "a2 a2"
+      "a3 a3"
+      "a4 a4"
+      "a5 a5";
+    gap: 10px;
+    padding: 70px;
   }
 
   #a1 {
     color: white;
-    font-size: 40px;
-    padding: 0;
+  }
+
+  #a2,
+  #a3,
+  #a4,
+  #a5 {
+    margin-left: 100px;
   }
 }
 
