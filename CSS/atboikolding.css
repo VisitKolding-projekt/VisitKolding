@@ -12,14 +12,23 @@ body {
 }
 
 header {
-  background-image: url(https://picsum.photos/seed/picuum/1600/500);
+  background-image: url(https://picsum.photos/id/390/1000/1000);
   background-repeat: no-repeat;
-  background-position: center bottom;
   background-size: cover;
-  height: 300px;
+  min-height: 579px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
-h1 {
-  padding: 250px;
-
+#at-bo-i-kolding-title {
+  background-color: #ffff;
+  margin-left: 115px;
+  display: block;
+  padding: 25px;
+  font-size: 25px;
+  color: #be1212;
+  max-width: 660px;
+  font-family: "Roboto";
+  font-weight: 600;
+  width: 550px;
 }
-
