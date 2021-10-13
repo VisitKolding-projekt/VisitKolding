@@ -13,12 +13,11 @@
 
 /* FØLG OS PÅ */
 
-.følgos {
+.folgos {
   max-width: 1630px;
   margin: auto;
   position: relative;
   display: grid;
-  padding: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "a1 a1 none a2 a3 a4 a5";
   background-color: #be1212;
@@ -45,7 +44,7 @@
   grid-area: a5;
 }
 
-.følgos h5 {
+#a1 {
   font-size: 30px;
   color: white;
   font-size: 60px;
@@ -53,14 +52,20 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .følgos {
+  .folgos {
     justify-content: center;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "a1 a1" "a2 a3" "a4 a5";
     gap: 0px;
+  }
+
+  #a1 {
+    color: white;
+    font-size: 40px;
+    padding: 0;
   }
 }
 
