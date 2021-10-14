@@ -52,28 +52,24 @@
   .folgos {
     position: relative;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      "a1 a1 a1 a1"
-      "a2 a2 a3 a3"
-      "a4 a4 a5 a5";
-    /* "a4 a4"
-      "a5 a5"; */
+      "a1 a1 a1"
+      "a2 a3 none"
+      "a4 a5 none";
     gap: 20px;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   #a1 {
-    font-size: 40px;
-    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
   }
 
-  #a2,
-  #a3,
-  #a4,
-  #a5 {
-    padding: 30px;
+  .folgos {
+    padding-left: 100px;
   }
 }
 
