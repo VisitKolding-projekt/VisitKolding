@@ -66,6 +66,7 @@
 
   #a1 {
     padding-right: 0;
+    padding-bottom: 20px;
   }
 
   #a2,
@@ -73,6 +74,7 @@
   #a4,
   #a5 {
     margin-left: 100px;
+    padding-bottom: 20px;
   }
 }
 
