@@ -151,12 +151,16 @@ header {
       "b6"
       "b7"
       "b8"
-      "b9";
+      "b9"
+      "b3";
   }
 
-  #b3,
   #b10 {
     display: none;
+  }
+
+  .figure-content {
+    padding: 20px;
   }
 }
 
@@ -361,32 +365,66 @@ header {
     position: relative;
     display: grid;
     background-color: #eaeaea;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 0;
-    gap: 10px;
+    gap: 5px;
     grid-template-areas:
-      "begiv1 begiv2 begiv9"
-      "none begiv2 begiv2"
-      "begiv4 begiv6 begiv3"
-      "none begiv6 begiv6"
-      "begiv7 begiv8 begiv5"
-      "begiv3 begiv3 begiv3";
+      "begiv1 begiv2 begiv2"
+      "begiv9 begiv2 begiv2"
+      "begiv4 begiv5 begiv5"
+      "begiv3 begiv5 begiv5"
+      "begiv7 begiv8 begiv8"
+      "begiv6 begiv8 begiv8";
   }
 
   .begivenheder-container img {
     position: relative;
     bottom: 10px;
-    width: 200px;
+    left: 50px;
+    width: 100px;
     max-height: 216px;
     object-fit: cover;
-    padding: 30px;
+    padding: 10px;
   }
 
   .begivenheder-container p {
     position: absolute;
-    right: 80px;
-    padding: 0 100px;
+    padding: 30px 20px;
     font-size: 10px;
+    margin-left: 150px;
+  }
+
+  #begiv1 {
+    grid-area: begiv1;
+    font-weight: 500;
+    color: #be1212;
+    padding: 10px 10px;
+    margin-left: 50px;
+  }
+
+  #begiv4 {
+    grid-area: begiv4;
+    font-weight: 500;
+    color: #be1212;
+    padding: 10px 10px;
+    margin-left: 50px;
+  }
+
+  #begiv7 {
+    grid-area: begiv7;
+    font-weight: 500;
+    color: #be1212;
+    padding: 10px 10px;
+    margin-left: 50px;
+  }
+
+  #kommende-begivenheder h2 {
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 60px;
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    color: #be1212;
   }
 }
