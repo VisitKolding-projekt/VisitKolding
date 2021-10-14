@@ -382,7 +382,7 @@ header {
     position: relative;
     bottom: 10px;
     left: 10px;
-    width: 100px;
+    width: 85px;
     max-height: 216px;
     object-fit: cover;
     padding: 10px;
@@ -422,7 +422,7 @@ header {
   #kommende-begivenheder h2 {
     font-size: 30px;
     font-weight: 700;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-top: 5vw;
     padding-bottom: 2vw;
     color: #be1212;
