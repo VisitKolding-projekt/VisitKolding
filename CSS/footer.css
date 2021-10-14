@@ -52,29 +52,28 @@
   .folgos {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
     grid-template-areas:
-      "a1 a1"
-      "a2 a2"
-      "a3 a3"
-      "a4 a4"
-      "a5 a5";
-    gap: 10px;
-    padding: 40px;
+      "a1 a1 a1 a1"
+      "a2 a2 a3 a3"
+      "a4 a4 a5 a5";
+    /* "a4 a4"
+      "a5 a5"; */
+    gap: 20px;
+    padding: 0px;
   }
 
   #a1 {
-    padding-right: 0;
-    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
   }
 
   #a2,
   #a3,
   #a4,
   #a5 {
-    margin-left: 100px;
-    padding-bottom: 20px;
+    padding: 30px;
   }
 }
 
@@ -155,10 +154,19 @@
       "b";
   }
 
+  #c1 {
+    grid-area: a;
+    font-size: 15px;
+    line-height: 30px;
+    padding: 10px;
+    text-align: center;
+  }
+
   #c2 {
     grid-area: b;
     display: grid;
     grid-template-columns: auto;
+    padding: 5px;
   }
 }
 
@@ -210,10 +218,10 @@
     position: absolute;
     left: 0;
     top: 13px;
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .footer-strip li a {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
